@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 编辑activity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_touch_area"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/message_activity_bg" >
+
+        <com.zhima.ui.common.view.PullToRefreshListView
+            xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/chat_listview"
+            android:layout_above="@+id/edit_view"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="3dp"
+            android:listSelector="#00000000"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            zhima:ptrMode="both"
+            android:scrollbars="none" >
+        </com.zhima.ui.common.view.PullToRefreshListView>
+
+        <com.zhima.ui.common.view.ZhimaEditView
+            android:id="@+id/edit_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="5dp" >
+        </com.zhima.ui.common.view.ZhimaEditView>
+    </RelativeLayout>
+
+</LinearLayout>

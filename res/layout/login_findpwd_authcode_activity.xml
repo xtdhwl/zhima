@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_silver"
+    android:orientation="vertical" >
+    
+    <include
+        layout="@layout/topbar"
+        />
+    
+   	<TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="@dimen/text_size_22"
+        android:textColor="@color/unknown_ranking_heavyBlack"
+        android:text="@string/findPwd_authcode_text"
+        />
+   	
+   	<EditText 
+   	    android:id="@+id/edt_findPwd_authcode"
+   	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+   	    />
+   	
+   	<Button 
+        android:id="@+id/btn_findPwd_checking"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_20"
+        android:text="@string/checking"
+        />
+
+</LinearLayout>

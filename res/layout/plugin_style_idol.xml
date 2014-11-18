@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 知天使空间样式配置文件 -->
+<view class="com.zhima.plugin.ViewPStyle"
+    
+    xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+    
+        
+    zhima:viewPluginTopbarBackground="@color/red_color"
+    
+     zhima:viewPluginTitleColor="@color/black_grey"
+     
+    zhima:viewPluginTitleBackground="@color/red_color"
+   
+    zhima:viewPluginLayoutBackground="@color/main_bg" >
+
+</view>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhima.ui.space.controller.SpaceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdgeLength="0dp"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/layout_default"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</com.zhima.ui.space.controller.SpaceScrollView>

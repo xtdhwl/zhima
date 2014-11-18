@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include layout="@layout/topbar" 
+        android:layout_alignParentTop="true"/>
+
+    <com.zhima.ui.common.view.SlidingMenuView
+        android:id="@+id/sliding_menu_view"
+        android:layout_below="@+id/ztop_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/left_sliding_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/blue"
+            android:orientation="vertical" >
+
+            <!-- 此处是菜单View  代码里边调用SlidingMenuView.snapToScreen(0) 滑动菜单栏 -->
+
+            <TextView
+                android:id="@+id/to_inbox"
+                style="@style/personal_manager_son_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="INBOX" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ff000000" />
+
+            <TextView
+                android:id="@+id/to_card_holder"
+                style="@style/personal_manager_son_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="卡片夹" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ff000000" />
+
+            <TextView
+                android:id="@+id/to_contact"
+                style="@style/personal_manager_son_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="通讯录" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ff000000" />
+
+            <TextView
+                android:id="@+id/to_favorite"
+                style="@style/personal_manager_son_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="收藏" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ff000000" />
+
+            <TextView
+                android:id="@+id/to_scan_history"
+                style="@style/personal_manager_son_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="扫码记录" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ff000000" />
+
+            <TextView
+                android:id="@+id/to_look_history"
+                style="@style/personal_manager_son_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="浏览记录" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#ff000000" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/sliding_body"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white_color" >
+
+            <!-- 各个菜单对应ContentView -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pm_son_top_edit_bg_color" >
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/test_line_round" >
+
+                    <TextView
+                        android:id="@+id/change_mode"
+                        android:layout_width="99dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="转换" />
+
+                    <View
+                        android:layout_width="0.5dip"
+                        android:layout_height="fill_parent"
+                        android:background="#ff000000" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="共10条结果" />
+                </LinearLayout>
+                <!-- 扫码记录 -->
+
+                <include layout="@layout/user_scan_code_view" />
+                <!-- 收藏 -->
+
+                <include layout="@layout/user_center_collect_view" />
+                <!-- 通讯录 -->
+
+                <include layout="@layout/user_center_contact_view" />
+                <!-- 卡片夹 -->
+
+                <include layout="@layout/user_cardlist_view" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.zhima.ui.common.view.SlidingMenuView>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+/* 
+* @Title: GetUserInfoHttpRequestCallback.java
+* Created by liubingsr on 2012-5-14 下午4:37:21 
+* Copyright (c) 2012 Zhima Information Technology Co., Ltd. All rights reserved.
+*/
+package com.zhima.data.service;
+
+import com.zhima.app.ZhimaApplication;
+import com.zhima.base.config.SystemConfig;
+import com.zhima.base.consts.ZMConsts.ProtocolType;
+import com.zhima.base.network.IHttpRequestCallback;
+import com.zhima.base.protocol.ProtocolHandlerBase;
+import com.zhima.base.utils.SettingHelper;
+import com.zhima.base.utils.SettingHelper.Field;
+
+/**
+* @ClassName: GetUserInfoHttpRequestCallback
+* @Description: 登录处理
+* @author liubingsr
+* @date 2012-9-22 下午1:37:10
+*
+*/
+public class GetUserInfoHttpRequestCallback implements IHttpRequestCallback {
+	private final static String TAG = "GetUserInfoHttpRequestCallback";
+	/**
+	* @Title: onHttpStart
+	* @Description: 发送http请求前回调
+	* @param protocol
+	* @return void
+	*/
+	public void onHttpStart(ProtocolHandlerBase protocol) {
+		
+	}
+	/**
+	* @Title: onHttpResult
+	* @Description: 接收服务端http返回数据后回调
+	* @param protocol
+	* @return void
+	*/
+	public void onHttpResult(ProtocolHandlerBase protocol) {
+		int protocolType = protocol.getProtocolType();
+		if (protocolType == ProtocolType.GET_USERINFO_PROTOCOL) {
+			if (protocol.isHttpSuccess()) {
+				if (protocol.isHandleSuccess()) {
+					// TODO登录处理
+					SettingHelper.setBoolean(ZhimaApplication.getContext(), Field.IS_NEED_GET_MYSELF, false);
+				}
+			} else {
+				// TODO 网络连接错误
+			}
+		}		
+	}
+}

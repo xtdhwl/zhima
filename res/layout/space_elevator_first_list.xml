@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 拍码:交通工具空间activity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/space_header"/>
+
+    <!-- 测试CardView -->
+
+    <com.zhima.ui.common.view.CardView
+        android:id="@+id/productCard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        zhima:itemCount="3"
+        zhima:title="图片展示" >
+    </com.zhima.ui.common.view.CardView>
+
+    <TextView
+        style="@style/list_line"
+        android:text="@string/joke" />
+
+</LinearLayout>

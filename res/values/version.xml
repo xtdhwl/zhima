@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="version_build_num">130</string>
+	<string name="version_type">130</string>
+	<string name="version">1.3.0</string>
+</resources>

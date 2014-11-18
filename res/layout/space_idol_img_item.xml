@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/topbar_button_bg_selecter"
+    android:gravity="center_horizontal"
+    android:padding="5dp" >
+
+   <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:padding="3dp"
+        android:background="@drawable/image_select_bg"
+        android:scaleType="fitXY" 
+        android:src="@drawable/default_image">
+    </ImageView>
+
+</RelativeLayout>

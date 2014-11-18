@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/favorite"
+        android:title="@string/watchdog_favorite"/>
+    <item
+        android:id="@+id/sms"
+        android:title="@string/sms_menu"/>
+    <item
+        android:id="@+id/sina_weibo"
+        android:title="@string/sina_weibo_menu"/>
+    <item
+        android:id="@+id/qq_weibo"
+        android:title="@string/qq_weibo_menu"/>
+    <item
+        android:id="@+id/renren_space"
+        android:title="@string/renren_space_menu"/>
+
+
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="3dp"
+        android:background="@drawable/image_select_bg"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_image" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/txt_time"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txt_title"
+                android:layout_alignParentRight="true"
+                android:text="--"
+                android:textColor="@color/common_grey_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_title"
+                android:lines="3"
+                android:ellipsize="end"
+                android:textColor="@color/common_grey_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">    
+     <!-- 获得焦点但未按下时的背景图片 -->  
+    <item android:state_focused="true" android:drawable="@color/transparent" />  
+     <!-- 按下时的背景图片 -->  
+    <item android:state_pressed="true" android:drawable="@drawable/watchdog_left_bg_select_h" />  
+    <!--  按下时的背景图片 -->  
+    <item android:state_selected="true" android:drawable="@drawable/watchdog_left_bg_select_h" />  
+    <!--  默认时的背景图片 -->  
+    <item android:drawable="@color/transparent" />
+</selector>

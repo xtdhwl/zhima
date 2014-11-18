@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义PopupMenu中的item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="12dp"
+    android:background="@color/transparent"
+    android:paddingRight="12dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+         android:layout_gravity="center_vertical|left"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/zhima_popupmenu_height" />
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical|right"
+        android:src="@drawable/icon"/>
+
+</LinearLayout>

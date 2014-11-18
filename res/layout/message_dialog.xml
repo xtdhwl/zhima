@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:background="@color/transparent"
+    >
+    
+    <LinearLayout 
+        android:layout_width="250dp"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:background="@color/custom_dialog_bg"
+    	android:gravity="center"
+        >
+        
+    <TextView 
+        android:id="@+id/txt_messageDialog_title"
+        android:layout_width="250dp"
+    	android:layout_height="60dp"
+    	android:textSize="25dp"
+    	android:gravity="center_vertical"
+    	android:textColor="#33a3dc"
+    	android:paddingLeft="10dp"
+    	android:paddingTop="15dp"
+    	android:text="提示"
+        />
+    
+    <View 
+        android:layout_width="250dp"
+    	android:layout_height="2dp"
+    	android:background="#33a3dc"
+        />
+    
+	<TextView 
+	    android:id="@+id/txt_messageDialog_message"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="20dp"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:layout_marginBottom="20dp"
+    	android:textSize="@dimen/text_size_18"
+    	android:textColor="@color/custom_dialog_text_black"
+    	android:lineSpacingExtra="3dp"
+    	android:text="已成功发送密码找回邮件,请登录邮箱查收！"
+	    />
+    
+	<View 
+        android:layout_width="250dp"
+    	android:layout_height="0.2dp"
+    	android:background="@color/light_gray"
+        />
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="60dp"
+    	android:gravity="center_vertical"
+    	android:orientation="horizontal"
+	    >
+	    
+	    <TextView 
+	        android:id="@+id/txt_messageDialog_leftButton"
+	        android:layout_width="wrap_content"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="1"
+    		android:background="@drawable/topbar_button_bg_selecter"
+    		android:gravity="center"
+    		android:textColor="@color/custom_dialog_text_black"
+    		android:textSize="@dimen/text_size_20"
+    		android:text="取消"
+	        />
+	    
+	    <View 
+        	android:layout_width="0.2dp"
+    		android:layout_height="fill_parent"
+    		android:background="@color/light_gray"
+        />
+	    <TextView 
+	        android:id="@+id/txt_messageDialog_rightButton"
+	        android:layout_width="wrap_content"
+    		android:layout_height="fill_parent"
+    		android:layout_weight="1"
+    		android:background="@drawable/topbar_button_bg_selecter"
+    		android:gravity="center"
+    		android:textColor="@color/custom_dialog_text_black"
+    		android:textSize="@dimen/text_size_20"
+    		android:text="确定"
+	        />
+	</LinearLayout>
+	
+	</LinearLayout>
+</LinearLayout>

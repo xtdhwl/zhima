@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 邮箱注册 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edt_phoneRegister_phoneNum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="@string/login_input_phoneNum"
+            android:phoneNumber="true"
+            android:singleLine="true" 
+            android:background="@drawable/login_edit_bg1"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_agree_clause"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" 
+            >
+
+            <CheckBox
+                android:id="@+id/cb_phoneRegister_agree_clause"
+                style="@style/Custom_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:checked="true"
+                android:text="已阅读并同意"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/txt_phoneRegister_use_clause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用条款和隐私条款"
+                android:textColor="@color/blue_deep"
+                android:textSize="@dimen/text_size_14" />
+
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="和"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/txt_phoneRegister_privacy_clause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隐私条款"
+                android:textColor="@color/red_color"
+                android:textSize="@dimen/text_size_14" /> -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_phoneRegister_nextStep"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/login_button_bg_selecter"
+            android:text="@string/login_next_step"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/list_line"
+                android:layout_width="fill_parent"
+                android:text="@string/heading" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/common_grey_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                style="@style/list_line"
+                android:layout_width="fill_parent"
+                android:text="@string/intro" />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/common_grey_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/main_bg" >
+
+                <com.zhima.ui.common.view.CardView
+                    android:id="@+id/card_photo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zhima:title="商户相册" >
+                </com.zhima.ui.common.view.CardView>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 商品列表 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/txt_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_photo"
+        android:layout_alignRight="@id/img_photo"
+        android:background="#118800"
+        android:visibility="gone"
+        android:text="推" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        style="@style/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/img_photo"
+        android:layout_alignRight="@id/img_photo"
+        android:layout_below="@id/img_photo"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>

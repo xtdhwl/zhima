@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 字体大小 -->
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_9">9sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_25">25sp</dimen>
+    <dimen name="zhima_popupmenu_height">17dp</dimen>
+    <dimen name="zhima_popupmenu_max_width">80dp</dimen>
+    <dimen name="space_normal_card_view_height">23dp</dimen>
+    <!-- 空间活动时间 -->
+    <dimen name="space_time">12dp</dimen>
+    <!-- 空间标题,(商品列表) -->
+    <dimen name="space_title">18dp</dimen>
+    
+    <!-- 上拉刷新 -->
+    <dimen name="pull_indicator_right_padding">10dp</dimen>
+    <dimen name="pull_indicator_corner_radius">12dp</dimen>
+    <dimen name="pull_indicator_internal_padding">4dp</dimen>
+    <dimen name="pull_header_footer_left_right_padding">24dp</dimen>
+    <dimen name="pull_header_footer_top_bottom_padding">12dp</dimen>
+
+</resources>

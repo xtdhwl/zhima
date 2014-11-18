@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/topbar"/>
+    
+        <LinearLayout 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+            >
+            
+            
+            <ImageView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/logo01"
+    	android:layout_marginTop="50dp"
+    	android:layout_gravity="center_horizontal"
+        />
+    
+            
+            
+            
+            
+    <TextView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="30dp"
+    	android:layout_marginBottom="5dp"
+    	android:layout_gravity="center_horizontal"
+    	android:textSize="@dimen/text_size_16"
+    	android:textColor="@color/light_black"
+    	android:autoLink="web"
+    	android:text="www.zhima.net"
+         />
+    
+    <TextView 
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="@dimen/text_size_16"
+    			android:textColor="@color/light_black"
+    			android:padding="5dp"
+    			android:clickable="true"
+    			android:autoLink="phone"
+    			android:layout_gravity="center_horizontal"
+    			android:background="@drawable/topbar_button_bg_selecter"
+                android:text="客服电话：4008-016-610"
+                />
+    
+    <TextView 
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textSize="@dimen/text_size_16"
+    			android:textColor="@color/light_black"
+    			android:padding="5dp"
+    			android:clickable="true"
+    			android:autoLink="email"
+    			android:layout_gravity="center_horizontal"
+    			android:background="@drawable/topbar_button_bg_selecter"
+                android:text="E-mail：kefu@zhima.net"
+                />
+    <TextView
+        android:id="@+id/txt_setting_about_zhima_version"  
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="1dp"
+    	android:padding="5dp"
+    	android:layout_gravity="center_horizontal"
+    	android:textSize="@dimen/text_size_16"
+    	android:textColor="@color/light_black"
+    	android:text="当前版本 ：CHIMARK v1.0.0"
+         />
+
+            
+        </LinearLayout>
+        
+    <RelativeLayout 
+                android:layout_width="fill_parent"
+    			android:layout_height="fill_parent"
+                >
+                
+                
+                <TextView
+        			android:id="@+id/txt_zhima"  
+        			android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:layout_marginTop="1dp"
+    				android:padding="5dp"
+    				android:layout_gravity="center_horizontal"
+    				android:textSize="@dimen/text_size_10"
+    				android:singleLine="true"
+    				android:text="Copyright © 2013 ZHIMA Corporation,All Rights Reserved"
+    				android:layout_alignParentBottom="true"
+    				android:layout_centerHorizontal="true"
+         />
+                
+                <TextView
+        			android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:layout_marginTop="1dp"
+    				android:padding="5dp"
+    				android:layout_gravity="center_horizontal"
+    				android:textSize="@dimen/text_size_16"
+    				android:textColor="@color/light_black"
+    				android:layout_above="@+id/txt_zhima"
+    				android:text="知迅码信息科技·版权所有"
+    				android:layout_centerHorizontal="true"
+         />
+                
+            </RelativeLayout>
+    
+</LinearLayout>

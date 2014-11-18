@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/topbar_button_bg_selecter"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        style="@style/personalCenter_textview_black_16"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="已开通空间"
+        android:textSize="@dimen/text_size_18" />
+
+</LinearLayout>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="250dp"
+                android:padding="10dp"
+                >
+            <ImageView
+                android:id="@+id/img_zmspace_fame_intro_logo"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/wheel_val" 
+                android:layout_centerInParent="true"
+                />
+            
+            	<ImageView 
+            	    android:id="@+id/img_zmspace_fame_intro_download"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:background="@drawable/download_bg_selecter"
+                	android:layout_toRightOf="@+id/img_zmspace_fame_intro_logo"
+                	android:layout_marginLeft="5dp"
+                	android:layout_marginBottom="5dp"
+                	android:layout_alignParentBottom="true"
+            	    />
+            	
+            </RelativeLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+                android:background="@color/light_gray2"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="新  郎  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_maleName"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+                    android:text="张小三"
+                    />
+                
+                </LinearLayout>
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="城  市  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_maleCity"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="市场总监"
+                    />
+                
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+            	android:background="@color/light_gray2"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="生  日  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_maleBirth"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="11123165"
+                    />
+                
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="星  座  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_maleConstellation"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="\@芝麻客"
+                    />
+                
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+            	android:background="@color/light_gray2"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="血型  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_maleBloodType"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="\@芝麻客"
+                    />
+                
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+                >
+                
+                </LinearLayout>
+
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+                android:background="@color/light_gray2"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="新  娘  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_femaleName"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+                    android:text="张小三"
+                    />
+                
+                </LinearLayout>
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="城  市  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_femaleCity"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="市场总监"
+                    />
+                
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+            	android:background="@color/light_gray2"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="生  日  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_femaleBirth"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="11123165"
+                    />
+                
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="星  座  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_femaleConstellation"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="\@芝麻客"
+                    />
+                
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+            	android:background="@color/light_gray2"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="血型  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_femaleBloodType"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="\@芝麻客"
+                    />
+                
+                </LinearLayout>
+            
+           <View 
+               	android:layout_width="match_parent"
+            	android:layout_height="0.5dp"
+            	android:background="@color/light_gray2"
+               />
+            
+           <TextView 
+               	android:id="@+id/txt_zmspace_fame_intro_introduce"
+               	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:textSize="@dimen/text_size_18"
+            	android:padding="15dp"
+            	android:gravity="left"
+            	android:layout_marginBottom="20dp"
+            	android:textColor="@color/dust_grey"
+            	android:text="介绍：\n    哦啊死忍饥ui然后热挨饿热熔 而哦i加热爱哦惹急欧风太热i喔而容偶尔腾飞哦啊 二哦加热哦i鹅肉热"
+               />
+           
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

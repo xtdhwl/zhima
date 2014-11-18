@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhima="http://schemas.android.com/apk/res/com.zhima" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="9dp" >
+
+            <RelativeLayout
+                android:id="@+id/layout_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_photo"
+                android:layout_alignTop="@+id/img_photo"
+                android:layout_toLeftOf="@+id/img_photo"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/light_black"
+                        android:text="--"
+                        android:textSize="@dimen/text_size_20" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_zmid"
+                        style="@style/space_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="ZMID:--"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/txt_type"
+                        style="@style/space_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="类型:--"
+                        android:textSize="13dp" />
+
+                    <com.zhima.ui.space.controller.PraiseView
+                        android:id="@+id/praise"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:layout_gravity="bottom" >
+                    </com.zhima.ui.space.controller.PraiseView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="124dp"
+                android:layout_height="104dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/image_select_bg"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_image" />
+        </RelativeLayout>
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.zhima.ui.space.controller.NormalCardView
+                android:id="@+id/card_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                zhima:icon="@drawable/business_lbs" >
+            </com.zhima.ui.space.controller.NormalCardView>
+
+            <View style="@style/line" />
+
+            <com.zhima.ui.space.controller.NormalCardView
+                android:id="@+id/card_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                zhima:icon="@drawable/business_phone" />
+        </LinearLayout>
+
+        <View style="@style/line" />
+
+        <com.zhima.ui.common.view.ListCardView
+            android:id="@+id/card_notice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.zhima.ui.common.view.ListCardView>
+    </LinearLayout>
+
+</merge>

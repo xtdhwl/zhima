@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:padding="10dp"
+    android:background="@drawable/retrieval_space_item_selecter"
+    android:gravity="center_vertical"
+    >
+    
+	<TextView 
+	    android:id="@+id/txt_setting_main_item_title"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/black"
+    	android:textSize="@dimen/text_size_18"
+    	android:text="拍码设置"
+	    />
+    
+	<ImageView 
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:layout_centerVertical="true"
+    	android:src="@drawable/img_more"
+	    />
+	
+</RelativeLayout>

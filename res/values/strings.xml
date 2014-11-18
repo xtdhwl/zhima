@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公用String_value 可以公用的string可以写在这 -->
+    <string name="type">类型</string>
+    <string name="office_notice">官方公告</string>
+    <string name="commerce_notice">商业公告</string>
+    <string name="product_name">商品名称</string>
+    <string name="product_barcode">商品条码</string>
+    <string name="heading">名称</string>
+    <string name="product_price">商品价格</string>
+    <string name="product_desc">商品描述</string>
+    <string name="product_description">描&#160;&#160;&#160;&#160;述</string>
+    <string name="network_request_failed">网络连接错误，请重试</string>
+    <string name="network_failed_noContent">当前网络不稳定或无连接,无法查看更多内容</string>
+    <string name="save_failed">保存失败</string>
+    <string name="save_success">保存成功</string>
+    <string name="add_failed">添加失败</string>
+    <string name="add_success">添加成功</string>
+    <string name="msg_success">操作成功</string>
+    <string name="msg_failed">操作失败，请重试</string>
+    <string name="favorite_repeat_failed">已收藏，请勿重复操作</string>
+    <string name="favorite_success">收藏成功，已同步至收藏夹</string>
+
+    <!-- 首页 -->
+    <string name="scanning">扫码</string>
+    <string name="myzhima">个人中心</string>
+    <string name="retrieval">检索</string>
+    <string name="setting">设置</string>
+    <string name="contact">通讯录</string>
+    <string name="correction">纠错</string>
+    <string name="camera_flash_erroe">开启闪关灯失败!</string>
+    <string name="orginal_not_exists">原始内容已删除</string>
+
+    <!--
+         <string name="save_favorite_repeat_failed">已收藏，请勿重复操作</string>
+    <string name="save_favorite_failed">操作失败，请重试</string>
+    <string name="save_favorite_success">收藏成功</string>
+    
+    <string name="save_favorite_entry_success">收藏成功，已同步至收藏夹</string>
+    <string name="save_contact_success">保存成功,已同步至通讯录</string>
+    -->
+
+    <string name="save_card_success">获取成功，已同步至卡片夹</string>
+    <string name="praise_repeat_failed">今天您已赞过</string>
+    <string name="praise_success">感谢您的支持</string>
+    <string name="mycoupon_of_commerce">您有该商户优惠券,是否查看?</string>
+    <string name="coupon_enpty">没有优惠券了</string>
+    <string name="my_coupon">我的优惠券</string>
+    <string name="load_failed">加载失败</string>
+    <string name="scanned_result">扫码结果</string>
+    <string name="leave_message">留言</string>
+    <string name="is_giveUp">确定要舍弃吗?</string>
+    <string name="data_isEnpty">没有更多的数据</string>
+    <string name="message_connot_isNull">留言内容不能为空</string>
+    <string name="content_not_empty">内容不能为空</string>
+    <string name="title_not_empty">标题不能为空</string>
+    <string name="leave_message_success">留言成功</string>
+    <string name="leave_message_failed">留言失败</string>
+    <string name="send_message_failed">发送失败</string>
+    <string name="send_success">发送成功</string>
+    <string name="sending">正在发送...</string>
+    <string name="quit">退出</string>
+    <string name="quit_message">确定要退出芝麻客吗？</string>
+    <string name="diary_quit_message">确定要退出吗？</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="dialog_title">提示</string>
+    <string name="loading">正在加载中...</string>
+    <string name="app_name">芝麻客</string>
+    <string name="please_wait">请稍等</string>
+    <string name="upload_please_wait">正在上传，请稍等！</string>
+    <string name="please_select">请选择</string>
+    <string name="delete">删除</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+    <string name="delete_msg">确定删除吗？</string>
+    <string name="edit_overflow">已达到最大字数</string>
+    <string name="abandon">舍弃</string>
+    <string name="dateless">无限期</string>
+    <string name="whether_to_share">是否分享</string>
+    <string name="multimedia_info">影像展示</string>
+    <string name="acqierement_info">频道展示</string>
+
+    <!-- 登陆注册 -->
+    <string name="msg_gps_prompt">Gps没有打开,是否打开</string>
+    <string name="login">登录</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="register">注册</string>
+    <string name="account_number">账号</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="mobile_isRegister">该手机号码已经注册过,请确认后重新输入</string>
+    <string name="mobile_isNotRegister">该手机号码未注册过，请先注册该手机号码</string>
+    <string name="email_isRegister">该邮箱已经注册过,请确认后重新输入</string>
+    <string name="email_isNotRegister">该邮箱未注册过,请先注册该邮箱</string>
+    <string name="register_failed">注册失败</string>
+    <string name="usernameAndPwd_isWrong">用户名或密码输入错误,请重新输入</string>
+    <string name="please_input_username">请输入邮箱或手机号</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="register_method">注册方式</string>
+    <string name="register_byPhone">手机注册</string>
+    <string name="register_byEmail">邮箱注册</string>
+    <string name="reset_password_byPhone">手机重置密码</string>
+    <string name="reset_password_byEmail">邮箱重置密码</string>
+    <string name="user_register">用户注册</string>
+    <string name="email">邮箱</string>
+    <string name="telephone">手机:</string>
+    <string name="confirm">确认</string>
+    <string name="please_input_email">请输入邮箱</string>
+    <string name="please_confirm_password">请重新输入密码</string>
+    <string name="emailAndPwd_connot_isNull">邮箱或密码不能为空</string>
+    <string name="please_input_rightEmail">请输入正确的邮箱</string>
+    <string name="please_input_rightPassword">请输入正确的密码(6-16位数组或字母,可组合)</string>
+    <string name="please_input_rightPhoneNum">请输入正确的手机号</string>
+    <string name="two_password_disaccord">两次密码输入不一致</string>
+    <string name="please_input_authcode">请输入您手机收到的验证码:</string>
+    <string name="use_other_phoneNumber">使用其他手机号</string>
+    <string name="login_input_phoneNum">填写手机号</string>
+    <string name="checking">验证</string>
+    <string name="authCode">验证码</string>
+    <string name="authCode_isWrong">验证码填写错误</string>
+    <string name="please_input_phoneNum">请输入您的手机号:</string>
+    <string name="confirm_button">确定</string>
+    <string name="setup_password">设置密码</string>
+    <string name="nickname">昵称:</string>
+    <string name="head_icon">头像:</string>
+    <string name="birthday">生日:</string>
+    <string name="area">地区:</string>
+    <string name="blood_type">血型</string>
+    <string name="astro">星座</string>
+    <string name="body_height">身高</string>
+    <string name="agree_agreement">同意《协议》</string>
+    <string name="finish">完成</string>
+    <string name="activate_email">邮件已发送到您的邮箱,点击前往您的邮箱激活账户</string>
+    <string name="findPwd_authcode_text">验证码已发送到您的邮箱,请查看您的邮箱并输入验证码</string>
+    <string name="retry_send_activate_email">重发激活邮件</string>
+    <string name="personalData_setup">个人资料设置</string>
+    <string name="findPwd">找回密码</string>
+    <string name="please_input_newPwd">请输入新密码</string>
+    <string name="please_input_again">请重新输入</string>
+    <string name="activate_email_title">邮件激活</string>
+    <string name="login_next_step">下一步</string>
+    <string name="login_wait_start">正在开始...</string>
+    <string name="camera_auto_focus_exception">自动对焦失败</string>
+    <string name="virtual_description">当前虚拟账户将为以后注册时同步本地数据使用</string>
+    <string name="send_again">再次发送</string>
+    <string name="registed_user">已注册用户</string>
+    <string name="no_registed_user">未注册用户</string>
+
+    <!-- 邮件 -->
+    <string name="mail_failed">打开邮箱失败</string>
+    <string name="select_mail_account">选择邮箱</string>
+    <!-- main页菜单 -->
+    <string name="scan_code">扫码</string>
+    <string name="person_space">个人空间</string>
+    <string name="elevator_space">公共空间</string>
+    <string name="vehicle_space">交通工具</string>
+    <string name="business_space">商业空间</string>
+    <string name="notice_space">空间公告</string>
+    <string name="entryway">开门</string>
+    <string name="unknown">未知庶</string>
+    <string name="personal_center">个人中心</string>
+    <string name="more">更多</string>
+    <string name="more_content">更多内容</string>
+    <string name="photo_library">图片库</string>
+    <string name="picture">图片</string>
+    <string name="obtain_promotion">获取活动</string>
+    <string name="content">内容</string>
+    <string name="business_promotion">商家活动</string>
+    <string name="business_promotion_view">商户活动展示</string>
+    <string name="promotion_particular">活动详情</string>
+    <string name="select_photo">选择相片</string>
+    <string name="upload_photo">上传照片</string>
+    <string name="look_album">查看相册</string>
+    <!-- 拍照 -->
+    <string name="take_photos">拍照</string>
+    <string name="joke">知趣</string>
+    <string name="privacy_state">私密</string>
+    <string name="public_state">公开</string>
+
+    <!-- 扫描条码 -->
+    <string name="scanning_tip1">请将二维码或条码置于区域框</string>
+    <string name="scanning_tip2">(软件将自动识别)</string>
+    <string name="open_camera_fail">打开摄像机失败</string>
+    <string name="msg_camera_framework_bug">很抱歉，相机出现问题。您可能需要重新启动设备。</string>
+    <string name="scanning_fail">无法识别，请注意拍摄环境以及码是否完整清晰</string>
+    <!-- 扫码 -->
+    <string name="clipboard_str">信息来自于芝麻客户端 www.zhima.net</string>
+    <string name="clipboard_msg">信息已复制到剪贴板</string>
+    <string name="copy">复制</string>
+    <string name="scan_result">扫描结果</string>
+    <!-- 空间 -->
+    <string name="gain_coupon">获取活动</string>
+    <string name="gain_fail">获取失败</string>
+    <string name="gain_coupon_succeed">获取成功,以同步至inbox</string>
+    <string name="remain">剩余</string>
+    <string name="commodity">商品</string>
+    <string name="commodity_code">商品码</string>
+    <string name="indication_price">参考价</string>
+    <string name="idol">知天使</string>
+    <string name="name">姓名</string>
+    <string name="autograph">签名</string>
+    <string name="price">价格</string>
+    <string name="business">商家</string>
+    <string name="product_specification">规&#160;&#160;&#160;&#160;格</string>
+    <string name="look_others_title">查看别人同时别人也会看到你</string>
+    <string name="look_message">查看留言</string>
+    <string name="intro">简介</string>
+    <string name="notice">公告</string>
+    <string name="product_list">商品列表</string>
+    <string name="product_view">商品展示</string>
+    <string name="map">地图</string>
+    <string name="product_particular">商品详情</string>
+    <string name="image_list">图片展示</string>
+    <string name="look">查看</string>
+    <!-- 赞 -->
+    <string name="unknow">未知</string>
+    <string name="environment">环境</string>
+    <string name="service">服务</string>
+    <string name="quality">质量</string>
+    <string name="like">喜欢</string>
+    <string name="security">安全</string>
+    <string name="add_one">+1</string>
+    <!-- 未知庶 -->
+    <string name="area_selected">选择区域</string>
+    <string name="unknown_post_reply">回复</string>
+    <string name="all">全部</string>
+    <string name="trueman">庶民</string>
+    <string name="schoolyard">校园</string>
+    <string name="newScan">时讯</string>
+    <string name="sd_error">读取SD卡失败.请检查SD卡是否安装</string>
+
+    <!-- 我的芝麻 -->
+    <string name="content_title_baseinfo">基本资料</string>
+    <string name="album">相册</string>
+    <string name="photoText">点击修改头像</string>
+    <string name="type_choose">选择类型</string>
+    <string name="no_more_data">没有更多了哦</string>
+
+    <!-- 个人中心 -->
+    <string name="perssonal_center_trends">动态</string>
+    <string name="perssonal_center_data">资料</string>
+    <string name="perssonal_center_steward">个人管家</string>
+    <string name="perssonal_center_space">个人空间</string>
+    <string name="edit">编辑</string>
+    <string name="add_friend_success">添加好友成功</string>
+    <string name="add_friend_failed">添加好友失败</string>
+    <string name="delete_friend_success">删除好友成功</string>
+    <string name="delete_friend_failed">删除好友失败</string>
+    <string name="apply_add_friend_success">申请添加好友成功</string>
+    <string name="apply_add_friend_failed">申请添加好友失败</string>
+    <string name="apply_delete_friend_success">申请删除好友成功</string>
+    <string name="apply_delete_friend_failed">申请删除好友失败</string>
+
+    <!-- 个人管家 -->
+    <string name="watchdog_inbox">Inbox</string>
+    <string name="watchdog_card_holder">卡片夹</string>
+    <string name="watchdog_favorite">收藏</string>
+    <string name="watchdog_contacts">通讯录</string>
+    <string name="watchdog_contacts_personal">个人通讯录</string>
+    <string name="watchdog_contacts_space">空间通讯录</string>
+    <string name="watchdog_scan_record">扫码记录</string>
+    <string name="watchdog_other_favorite">其他</string>
+    <string name="watchdog_notice">公告</string>
+    <string name="watchdog_system_message">系统通知</string>
+    <string name="watchdog_friend_requst">好友申请</string>
+    <string name="watchdog_conversation">私信</string>
+    <string name="watchdog_result_count">共%d条结果</string>
+    <string name="watchdog_date">日期</string>
+    <string name="agree">同意</string>
+    <string name="decline">拒绝</string>
+    <string name="no_favorite_goods">您还未收藏任何拍码商品结果</string>
+    <string name="no_favorite_ido">您还未收藏知天使</string>
+    <string name="no_favorite_couple">您还未收藏喜印</string>
+    <string name="no_favorite_data">您还没有该收藏</string>
+    <string name="no_favorite_record">您还没有扫码操作</string>
+    <string name="no_favorite_card">您还未获取任何活动卡片</string>
+    <string name="no_inbox_data">还没有消息</string>
+    <string name="myzhima_request_failed">网络连接似乎出了些问题,请检查后重试</string>
+    <!-- 自定义控件 -->
+    <!-- 上拉加载,下拉更多自定义控件的头或脚 -->
+    <string name="pull_to_refresh_pull_header_label">拉动刷新…</string>
+    <string name="pull_to_refresh_pull_footer_label">拉动更多…</string>
+    <string name="pull_to_refresh_release_header_label">松手刷新…</string>
+    <string name="pull_to_refresh_release_footer_label">松手加载…</string>
+    <string name="pull_to_refresh_refreshing_header_label">正在加载…</string>
+    <string name="pull_to_refresh_refreshing_footer_label">正在加载…</string>
+    <string name="pull_to_refresh_sub_header_label">没有更多数据了…</string>
+    <string name="pull_to_refresh_sub_footer_label">没有更多数据了…</string>
+    <!-- 自定义表情文字输入view -->
+    <string name="edit_hint">写点什么吧...</string>
+    <string name="input_prompt">还可以输入%s个字</string>
+
+    <!-- 分享 -->
+    <string name="sms_menu">分享至短信</string>
+    <string name="sina_weibo_menu">分享新浪微博</string>
+    <string name="qq_weibo_menu">分享腾讯微博</string>
+    <string name="renren_space_menu">分享人人网</string>
+    <string name="sms">短信</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="qq_weibo">腾讯微博</string>
+    <string name="renren_space">人人网</string>
+    <string name="not_login">您还未登陆！</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="repeat_content">内容重复</string>
+    <string name="connect_timeout">连接超时</string>
+    <string name="sms_message">我在使用\"@芝麻客\" 客户端拍码，拍码结果:%s。欢迎关注@北京知迅码，http://www.zhima.net</string>
+    <string name="share_content">我在使用\"@芝麻客\" 客户端查看:%1$s，ZMID:%2$s，欢迎关注@北京知迅码，%3$s。</string>
+    <string name="share_content_no_id">我在使用\"@芝麻客\" 客户端查看:%1$s，欢迎关注@北京知迅码，%2$s。</string>
+    <string name="joke_share_content">我在使用\"@芝麻客\" 客户端查看:%1$s，ZMID:%2$s，欢迎关注@北京知迅码，%3$s。#知趣#%4$s</string>
+    <string name="joke_sms_message">我在使用\"@芝麻客\" 客户端拍码，拍码结果:%1$s。欢迎关注@北京知迅码，http://www.zhima.net。#知趣#%2$s</string>
+    <string name="business_sms_message">我在使用\"@芝麻客\" 客户端查看:%1$s，ZMID:%2$s。欢迎关注@北京知迅码，%3$s</string>
+    <string name="zmproduct_sms_message">我在使用\"@芝麻客\" 客户端查看:%1$s。欢迎关注@北京知迅码，http://www.zhima.net</string>
+    <string name="idol_sms_message">我在使用\"@芝麻客\" 客户端查看:%1$s。欢迎关注@北京知迅码，%2$s</string>
+    <string name="couple_sms_message">我在使用\"@芝麻客\" 客户端查看:%1$s。ZMID:%2$s，欢迎关注@北京知迅码，%3$s</string>
+    <string name="diary_sms_message">我在使用\“@芝麻客\" 客户端查看:%1$s的日志。ZMID:%2$s，欢迎关注@北京知迅码，http://zhima.net</string>
+    <string name="lattice_sms_message">我在使用\“@芝麻客\" 客户端查看:%1$s的格子铺。ZMID:%2$s，欢迎关注@北京知迅码，http://zhima.net</string>
+    <string name="diary_share_content">我在使用\“@芝麻客\" 客户端查看:%1$s的日志。ZMID:%2$s，欢迎关注@北京知迅码，http://zhima.net</string>
+    <string name="lattice_share_content">我在使用\“@芝麻客\" 客户端查看:%1$s的格子铺。ZMID:%2$s，欢迎关注@北京知迅码，http://zhima.net</string>
+
+    <!-- 检索 -->
+    <string name="select_sort">选择排序</string>
+    <string name="select_area">选择地区</string>
+    <string name="select_type">选择类型</string>
+    <string name="select_date">选择日期</string>
+    <string name="noResult_retrieval">未检索到任何结果</string>
+    <string name="noResult_search">未搜索到任何结果</string>
+
+    <!-- 设置 -->
+    <string name="scancode_setting">扫码设置</string>
+    <string name="cancel_bind_share">已经解除绑定</string>
+    <string name="image_optimize">图片优化</string>
+    <string name="detection_version">版本检测</string>
+    <string name="about_we">关于芝麻</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="help_guide">帮助指南</string>
+    <string name="no_new_version">没有检测到新的版本</string>
+    <string name="no_sync_data">数据没有变化，不需要同步</string>
+    <string name="save_favorite_duplicate">已经保存过了</string>
+    <string name="idea_feedback_thanks">感谢您提出您的宝贵意见</string>
+    <string name="correction_feedback_thanks">感谢您提出宝贵的纠错意见（%1$d/%2$d字）</string>
+    <!-- 以下是错误提示信息 -->
+    <string name="general_error_msg">操作失败，请重试</string>
+
+    <!-- 情侣知天使 -->
+    <string name="couples_media_list">影像</string>
+    <string name="diary_list">日志</string>
+    <string name="diary_info">日志展示</string>
+    <string name="bless_sentence">祝福语</string>
+    <string name="bless_send_success">留言成功</string>
+    <string name="bless_forbid_name_empty">请输入昵称</string>
+    <string name="bless_forbid_content_empty">请输入留言内容</string>
+    <string name="bless_forbid_content_top">输入的留言字数超过范围哦！</string>
+    <string name="bless_forbid_name_top">输入的昵称保持在十个字数内哦！</string>
+    <string name="bless_name_label">昵称</string>
+    <string name="bless_content_label">祝福留言(0/140字)</string>
+    <string name="bless_name_hint">请输入昵称</string>
+    <string name="bless_content_hint">送上您的祝福吧！</string>
+    <string name="space_couples_title">知相印—喜印</string>
+    <string name="space_couples_title_short">喜印</string>
+    <string name="like_resubmit">每天只能喜欢一次哦~</string>
+    <string name="not_allow_comment">祝福已关闭，请联系空间主人</string>
+    <string name="no_hava_comment">还没有人送上祝福，快来抢做第一个</string>
+
+    <!-- 机构空间 -->
+    <string name="space_organization_title">机构空间</string>
+    <string name="recommend_organization">同类推荐</string>
+    <string name="leave_words_list">留言板</string>
+    <string name="leave_words_write">写留言</string>
+
+    <!-- 名片 -->
+    <string name="phone">电话</string>
+    <string name="address">地址</string>
+    <string name="company">公司</string>
+    <string name="profession_position">职位</string>
+    <string name="contents_contact">联系人信息</string>
+    <string name="contents_email">Email地址</string>
+    <string name="contents_location">地理坐标</string>
+    <string name="contents_phone">电话号码</string>
+    <string name="contents_sms">短信地址</string>
+    <string name="contents_text">纯文本</string>
+    <!-- 性别 -->
+    <string name="gender_male">男</string>
+    <string name="gender_female">女</string>
+    <string name="gender_unknown">保密</string>
+    <!-- 血型 -->
+    <string name="blood_a">A型</string>
+    <string name="blood_b">B型</string>
+    <string name="blood_ab">AB型</string>
+    <string name="blood_o">O型</string>
+    <string name="blood_unknown">未知</string>
+
+</resources>

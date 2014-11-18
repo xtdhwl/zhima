@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/topbar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_share_config_sina"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/topbar_button_bg_selecter"
+        android:gravity="center_vertical" >
+		<ImageView 
+		    android:id="@+id/logo_sinaweibo"
+		    android:layout_alignParentLeft="true"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:background="@drawable/logo_sinaweibo"
+		    android:layout_margin="10dp"/>
+        <TextView
+            android:layout_toRightOf="@+id/logo_sinaweibo"
+            android:gravity="center_vertical"
+            android:id="@+id/txt_share_config_sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="新浪微博"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18" />
+        
+        <CheckBox
+            android:id="@+id/cb_share_config_sina"
+            style="@style/Custom_checkBox"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true" 
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <View
+        style="@style/list_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_share_config_qq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/topbar_button_bg_selecter"
+        android:gravity="center_vertical" >
+		
+        <ImageView 
+		    android:id="@+id/logo_qqweibo"
+		    android:layout_alignParentLeft="true"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:background="@drawable/logo_qqweibo"
+		    android:layout_margin="10dp"/>
+        <TextView
+            android:layout_toRightOf="@+id/logo_qqweibo"
+            android:gravity="center_vertical"
+            android:id="@+id/txt_share_config_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="腾讯微博"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18" />
+        
+        <CheckBox
+            android:id="@+id/cb_share_config_qq"
+            style="@style/Custom_checkBox"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true" 
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            />
+        
+            <!-- style="@style/Custom_checkBox" -->
+    </RelativeLayout>
+
+    <View
+        style="@style/list_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_share_config_renren"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/topbar_button_bg_selecter"
+        android:gravity="center_vertical" >
+
+        <ImageView 
+		    android:id="@+id/logo_renren"
+		    android:layout_alignParentLeft="true"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:background="@drawable/logo_renren"
+		    android:layout_margin="10dp"/>
+        <TextView
+            android:layout_toRightOf="@+id/logo_renren"
+            android:gravity="center_vertical"
+            android:id="@+id/txt_share_config_renren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="人人网"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18" />
+        
+         <CheckBox
+            android:id="@+id/cb_share_config_renren"
+            style="@style/Custom_checkBox"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true" 
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            />
+        
+            <!-- style="@style/Custom_checkBox" -->
+    </RelativeLayout>
+
+    <View
+        style="@style/list_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</LinearLayout>

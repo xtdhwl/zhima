@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/image_select_bg"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_image" />
+
+        <LinearLayout
+            android:id="@+id/layout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_divider_dashed_holo_dark" />
+
+            <ImageView
+                android:id="@+id/img_phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/phone_sele" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_photo"
+            android:layout_alignTop="@id/img_photo"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/layout_right"
+            android:layout_toRightOf="@id/img_photo" >
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/txt_type"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="--"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/txt_type"
+                style="@style/card_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_phone"
+                android:text="--"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/txt_phone"
+                style="@style/card_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="--"
+                android:textSize="@dimen/text_size_13" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

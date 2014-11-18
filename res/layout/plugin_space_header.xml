@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 空间头部展示区 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.zhima.ui.common.view.SpaceViewPager
+            android:id="@+id/vpag_space_header_album"
+            android:layout_width="match_parent"
+            android:layout_height="280dp" >
+        </com.zhima.ui.common.view.SpaceViewPager>
+        <!-- 底部布局 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/vpag_space_header_album"
+            android:layout_marginBottom="20dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plugin_hreader_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" >
+
+                <!-- 左：相册 -->
+
+                <ImageView
+                    android:id="@+id/img_space_header_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/default_image" />
+
+                <!-- 右：描述 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp" >
+
+                    <!-- 姓名 -->
+
+                    <TextView
+                        android:id="@+id/txt_space_header_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="top"
+                        android:text="--"
+                        android:textColor="@color/mask"
+                        android:textSize="@dimen/text_size_18" />
+                    <!-- zmid -->
+
+                    <TextView
+                        android:id="@+id/txt_space_header_zmid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/txt_space_header_owner"
+                        android:layout_below="@id/txt_space_header_name"
+                        android:layout_centerVertical="true"
+                        android:gravity="bottom"
+                        android:text="--"
+                        android:textColor="@color/mask"
+                        android:textSize="@dimen/text_size_13" />
+                    <!-- 拥有者 -->
+
+                    <TextView
+                        android:id="@+id/txt_space_header_owner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="bottom"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_13" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</merge>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zhima.ui.common.view.PullToRefreshListView
+        xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+        android:id="@+id/pull_list_elevator"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      
+        zhima:ptrMode="pullUpFromBottom" >
+    </com.zhima.ui.common.view.PullToRefreshListView>
+
+    <!--
+    <ListView
+      android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider"
+        android:listSelector="@drawable/list_selector_background"
+        
+        
+        android:id="@+id/pull_list_elevator"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+    -->
+
+</LinearLayout>

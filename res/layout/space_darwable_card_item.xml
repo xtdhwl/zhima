@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="@drawable/image_select_bg"
+        android:padding="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        style="@style/card_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/img_photo"
+        android:layout_alignRight="@id/img_photo"
+        android:layout_below="@id/img_photo"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:singleLine="true" />
+
+</RelativeLayout>

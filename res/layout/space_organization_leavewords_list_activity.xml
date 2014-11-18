@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <TextView
+        android:id="@+id/no_have_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/no_hava_comment"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"
+        android:visibility="gone" >
+    </TextView>
+
+    <com.zhima.ui.common.view.PullToRefreshListView
+        xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+        android:id="@+id/refresh_lstv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/organization_list_divider"
+        zhima:ptrMode="both" >
+    </com.zhima.ui.common.view.PullToRefreshListView>
+
+</LinearLayout>

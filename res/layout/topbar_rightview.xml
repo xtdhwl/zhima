@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <!--
+             <RelativeLayout 
+            
+            ></RelativeLayout>
+        -->
+
+        <RelativeLayout
+            android:id="@+id/layout_topbar_rightButton5"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/topbar_button_bg_selecter"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:visibility="gone" >
+			<View 
+			    android:id="@+id/view_left_5"
+			    android:layout_width="1dp"
+            	android:layout_height="35dp"
+            	android:layout_centerVertical="true"
+            	android:layout_alignParentLeft="true"
+            	android:background="#001A31"/>
+			<View 
+			    android:id="@+id/view_middle_5"
+			    android:layout_width="1dp"
+            	android:layout_height="35dp"
+            	android:layout_centerVertical="true"
+            	android:layout_toRightOf="@+id/view_left_5"
+            	android:background="#04549D"/>
+            <TextView
+                android:id="@+id/img_topbar_rightButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/view_middle_5"
+                android:textColor="@color/white_color"
+            	android:textSize="@dimen/text_size_17" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/layout_topbar_rightButton4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/topbar_button_bg_selecter"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_topbar_rightButton4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/topbar_sent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_topbar_rightButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/topbar_button_bg_selecter"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_topbar_rightButton3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/topbar_share" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_topbar_rightButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/topbar_button_bg_selecter"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_topbar_rightButton2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/topbar_save" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_topbar_rightButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/topbar_button_bg_selecter"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_topbar_rightButton1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/topbar_overflow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <com.zhima.ui.common.view.ZMGallery
+        android:id="@+id/gal_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdgeLength="0dp"
+        android:spacing="10dp" >
+    </com.zhima.ui.common.view.ZMGallery>
+
+</LinearLayout>

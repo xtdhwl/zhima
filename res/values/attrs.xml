@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="centered" format="boolean" />
+        <attr name="fadeOut" format="integer" />
+        <attr name="inactiveType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="activeType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TitleFlowIndicator">
+        <attr name="titlePadding" format="dimension" />
+        <!-- Left/right padding of not active view titles. -->
+        <attr name="clipPadding" format="dimension" />
+        <attr name="selectedColor" format="color" />
+        <attr name="selectedBold" format="boolean" />
+        <attr name="selectedSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="footerLineHeight" format="dimension" />
+        <attr name="footerColor" format="color" />
+        <attr name="footerTriangleHeight" format="dimension" />
+        <attr name="customTypeface" format="string" />
+    </declare-styleable>
+
+    <!-- 自定义CardView  xml属性:title=标题 -->
+    <declare-styleable name="CardView">
+        <attr name="title" format="string" />
+        <attr name="itemCount" format="integer" />
+        <attr name="card_layout_margin" format="dimension"></attr>
+        <attr name="card_layout_marginBottom" format="dimension"></attr>
+        <attr name="card_layout_marginLeft" format="dimension"></attr>
+        <attr name="card_layout_marginRight" format="dimension"></attr>
+        <attr name="card_layout_marginTop" format="dimension"></attr>
+        <attr name="card_gravity" format="dimension"></attr>
+        <attr name="card_layout_gravity" format="dimension"></attr>
+        <attr name="card_padding" format="dimension"></attr>
+        <attr name="card_paddingBottom" format="dimension"></attr>
+        <attr name="card_paddingLeft" format="dimension"></attr>
+        <attr name="card_paddingRight" format="dimension"></attr>
+        <attr name="card_paddingTop" format="dimension"></attr>
+        <attr name="card_horizontalSpacing" format="dimension"></attr>
+        <attr name="card_verticalSpacing" format="dimension"></attr>
+    </declare-styleable>
+
+    <!-- 自动义空间 -->
+    <declare-styleable name="NormalCardView">
+        <attr name="icon" format="reference"></attr>
+        <attr name="content" format="string"></attr>
+        <attr name="arrow" format="enum"></attr>
+    </declare-styleable>
+
+    <!-- 上拉加载,下拉更多自定义控件Base -->
+    <declare-styleable name="PullToRefresh">
+        <attr name="ptrMode">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    <!-- viewPage指示器 -->
+    <declare-styleable name="vpiCirclePageIndicatorStyle">
+
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered_spu" format="reference" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation" />
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <!-- radius 命名为radius_sup ，因为ViewFlow以添加radius属性 -->
+        <attr name="radius_sup" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth" format="dimension" />
+        <!-- View background -->
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <!-- ViewPlugin样式 -->
+    <declare-styleable name="ViewPluginStyle">
+
+        <!-- viewPlugin Topbar背景颜色 -->
+        <attr name="viewPluginTopbarBackground" format="reference|color" />
+        <!-- viewPlugin 标题栏字体颜色 -->
+        <attr name="viewPluginTitleColor" format="color" />
+        <!-- viewPlugin 标题栏背景颜色 -->
+        <attr name="viewPluginTitleBackground" format="reference|color" />
+        <!-- viewPlugin 标题栏更多背景颜色 -->
+        <attr name="viewPluginMoreBackground" format="reference|color" />
+        <!-- list selecte 选择 -->
+        <attr name="viewPluginListSelector" format="reference|color" />
+        <!-- view 背景 -->
+        <attr name="viewPluginLayoutBackground" format="reference|color" />
+        <!-- selecte -->
+        <attr name="viewPluginSelector" format="reference|color" />
+        <!-- 菜单栏 -->
+        <attr name="viewPluginPopupMenuBackground" format="reference|color" />
+        <!-- 菜单栏 -->
+        <attr name="viewPluginPopupMenuSelector" format="reference|color" />
+        <!-- 菜单栏 -->
+        <attr name="viewPluginPopupMenuDivider" format="reference|color" />
+    </declare-styleable>
+
+</resources>

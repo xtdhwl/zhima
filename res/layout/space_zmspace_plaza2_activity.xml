@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/retrieval_type_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/btn_zmspace_plaza_newest"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/retrieval_type_bg_selecter"
+            android:gravity="center"
+            android:maxWidth="80dp"
+            android:singleLine="true"
+            android:text="最新"
+            android:textColor="@color/retrieval_type_textColor"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            android:id="@+id/view_interval_line1"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/interval_line" />
+
+        <TextView
+            android:id="@+id/btn_zmspace_plaza_hottest"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/retrieval_type_bg_selecter"
+            android:gravity="center"
+            android:maxWidth="80dp"
+            android:singleLine="true"
+            android:text="最热"
+            android:textColor="@color/retrieval_type_textColor"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            android:id="@+id/view_interval_line1"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/interval_line" />
+
+        <TextView
+            android:id="@+id/btn_zmspace_plaza_recommend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/retrieval_type_bg_selecter"
+            android:gravity="center"
+            android:maxWidth="80dp"
+            android:singleLine="true"
+            android:text="推荐"
+            android:textColor="@color/retrieval_type_textColor"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.zhima.ui.common.view.PullToRefreshListView
+            xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+            android:id="@+id/refresh_zmspace_plaza_newestList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/light_gray"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@android:color/transparent"
+            zhima:ptrMode="both" >
+        </com.zhima.ui.common.view.PullToRefreshListView>
+
+        <com.zhima.ui.common.view.PullToRefreshListView
+            xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+            android:id="@+id/refresh_zmspace_plaza_hottestList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/light_gray"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone"
+            zhima:ptrMode="both" >
+        </com.zhima.ui.common.view.PullToRefreshListView>
+
+        <com.zhima.ui.common.view.PullToRefreshListView
+            xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+            android:id="@+id/refresh_zmspace_plaza_recommendList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/light_gray"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone"
+            zhima:ptrMode="both" >
+        </com.zhima.ui.common.view.PullToRefreshListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="60dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txt_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="暂无数据"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

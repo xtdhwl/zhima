@@ -1,0 +1,23 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/main_grass0"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/main_grass1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/main_grass2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/main_grass3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/main_grass4"
+        android:duration="200"/>
+     <item
+        android:drawable="@drawable/main_grass5"
+        android:duration="200"/>
+    
+</animation-list>

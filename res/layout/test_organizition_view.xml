@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <com.zhima.ui.space.controller.SpaceScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#C7C8CC"
+        android:orientation="vertical" >
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="测试scrollview下的上下操作手势"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="测试scrollvi作手势" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="测试scrollview"
+                android:textSize="30sp" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/seekbar_organization_frame_bg"
+                />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/seekbar_organization_bg_img" 
+                />
+
+            <SeekBar
+                android:id="@+id/seek2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="100"
+                android:maxHeight="10dp"
+                android:minHeight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/seekbar_organization_style"
+                android:thumb="@drawable/seekbar_organizition_center_icon" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="这块儿是什么文字: 暂时还不知道呢，谁知道是什么" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/couples_icon_pic" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="PIC"
+                    android:textColor="#4F0101"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+		<View 
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:background="@drawable/dotted_line_horizal_card"/>
+        <Gallery
+            android:id="@+id/gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+		<View 
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:background="@drawable/dotted_line_horizal_card"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="3dp"
+            android:background="#F5F6FB"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:src="@drawable/card_above_gallery" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="测试scrollview下的上下操作手势"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="测试scrollview下的上下操作手势"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="测试scrollview下的上下操作手势"
+                android:textSize="30sp" />
+	</LinearLayout>
+	</com.zhima.ui.space.controller.SpaceScrollView>
+</LinearLayout>

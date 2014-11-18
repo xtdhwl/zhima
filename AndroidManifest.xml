@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhima"
+    android:versionCode="130"
+    android:versionName="1.3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATTON_MOCK_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_MMS" /> -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- <uses-permission android:name="android.permission.READ_CALENDAR" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_CALENDAR" /> -->
+
+
+    <!-- 新浪微博 -->
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" /> -->
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <!-- android:debuggable="true" -->
+    <application
+        android:name="com.zhima.app.ZhimaApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+
+        <!-- stats -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5082339f527015733700006e" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="zhima" />
+
+        <activity
+            android:name=".ui.main.activity.initActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhima.ui.main.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:name=".ui.main.activity.TestMainActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden" -->
+        <!-- android:screenOrientation="portrait" > -->
+        <!-- </activity> -->
+        <activity
+            android:name=".test.ProtocolTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 无网络下扫码结果 -->
+        <activity
+            android:name=".ui.space.activity.NoNetWorkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 机构印空间 -->
+        <activity
+            android:name=".ui.space.organization.activity.OrganizationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 机构印空间日志列表 -->
+        <activity
+            android:name=".ui.space.organization.activity.OrganizationDiaryListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 机构印空间影像列表 -->
+        <activity
+            android:name=".ui.space.organization.activity.OrganizationMediaListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 机构印空间留言列表 -->
+        <activity
+            android:name=".ui.space.organization.activity.LeaveWordsListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 机构印空间留言编辑 -->
+        <activity
+            android:name=".ui.space.organization.activity.LeaveWordsEditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 情侣知天使空间 -->
+        <activity
+            android:name=".ui.space.couples.activity.CouplesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 情侣知天使日志列表 -->
+        <activity
+            android:name=".ui.space.couples.activity.CouplesDiaryListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 情侣知天使日志详情 -->
+        <activity
+            android:name=".ui.space.couples.activity.CouplesDiaryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 情侣知天使影像列表 -->
+        <activity
+            android:name=".ui.space.couples.activity.CouplesMediaListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 情侣知天使影像详情 -->
+        <activity
+            android:name=".ui.space.couples.activity.CouplesMediaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 情侣知天使祝福语 -->
+        <activity
+            android:name=".ui.space.couples.activity.CouplesBlessActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 情侣知天使祝福编辑 -->
+        <activity
+            android:name=".ui.space.couples.activity.BlessEditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 知天使空间 -->
+        <activity
+            android:name=".ui.space.activity.IdolActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 知天使个人信息 -->
+        <activity
+            android:name=".ui.space.activity.IdolInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 知天使才艺展示列表 -->
+        <activity
+            android:name=".ui.space.activity.AcqierementListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 知天使才艺展示 -->
+        <activity
+            android:name=".ui.space.activity.AcqierementActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 知天使影像列表 -->
+        <activity
+            android:name=".ui.space.activity.MultimediaListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 知天使影像相册查看 -->
+        <activity
+            android:name=".ui.space.activity.IdoPhotoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 芝麻3000商品 -->
+        <activity
+            android:name=".ui.space.activity.ZMProductActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商业空间 -->
+        <activity
+            android:name=".ui.space.activity.BusinessActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商户相册 -->
+        <activity
+            android:name=".ui.space.activity.AlbumActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商业空间 介绍 -->
+        <activity
+            android:name=".ui.space.activity.BusinessInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商业空间公告 -->
+        <activity
+            android:name=".ui.space.activity.NoticeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商品详情 -->
+        <activity
+            android:name=".ui.space.activity.ProductInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商品列表 -->
+        <activity
+            android:name=".ui.space.activity.ProductListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 活动详情 -->
+        <activity
+            android:name=".ui.space.activity.PromotionInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 活动列表 -->
+        <activity
+            android:name=".ui.space.activity.PromotionListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 活动详情 -->
+        <activity
+            android:name=".ui.space.activity.NoticeInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 用户拥有商户优惠券列表 -->
+        <activity
+            android:name=".ui.space.activity.CouponListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 用户拥有商户优惠券 -->
+        <activity
+            android:name=".ui.space.activity.CouponInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 用户拥有商户优惠券 -->
+        <activity
+            android:name=".ui.space.activity.RetriConponInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 公共空间 -->
+        <activity
+            android:name=".ui.space.activity.PublicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 未知空间 -->
+        <activity
+            android:name=".ui.space.activity.UnknownActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 日记：拼图 -->
+        <activity
+            android:name="com.zhima.ui.diary.activity.JigsawActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 通讯录名片 -->
+        <activity
+            android:name=".ui.space.activity.VcardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 拍码结果 交通工具 -->
+        <activity
+            android:name=".ui.space.activity.VehicleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 交通工具 图片展示 -->
+        <activity
+            android:name=".ui.space.activity.SpaceImageShowListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 交通工具 图片详情 -->
+        <activity
+            android:name=".ui.space.activity.SpaceImageShowInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 公共空间  简介 -->
+        <activity
+            android:name=".ui.space.activity.PublicSpaceInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 拍码结果 电梯 -->
+        <activity
+            android:name=".ui.space.activity.ElevatorActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 拍码结果 电梯 随即趣闻 -->
+        <activity
+            android:name=".ui.space.activity.JokeInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商户地图 -->
+        <activity
+            android:name=".ui.space.activity.ZhimaMapLocation"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 高德地图 -->
+        <activity
+            android:name=".ui.map.activity.GeoMapLocation"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 导航Web -->
+        <activity
+            android:name="com.zhima.ui.map.activity.NavigationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 扫描二维码 -->
+        <activity
+            android:name=".ui.scancode.activity.ScanningActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.scancode.activity.QREncodeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 解析图片二维码 -->
+        <activity
+            android:name=".ui.scancode.activity.DecodeImageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 获取二维码链接 -->
+        <activity
+            android:name=".ui.scancode.activity.GetQRCodeInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="zhima.net"
+                    android:pathPrefix="/n1/"
+                    android:scheme="http" />
+                <data
+                    android:host="zhima.net"
+                    android:pathPrefix="/m1/"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <!-- ===========日记========== -->
+
+
+        <!-- 写日记 -->
+        <activity
+            android:name=".ui.diary.activity.LocalAlbumActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhima.ui.diary.activity.DiaryEditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 日志分享 -->
+        <activity
+            android:name=".ui.diary.activity.DiaryShareActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 评论列表 -->
+        <activity
+            android:name=".ui.diary.activity.DiaryCommentListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 日志详情 -->
+        <activity
+            android:name="com.zhima.ui.diary.activity.DiaryInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 日志评论 -->
+        <activity
+            android:name=".ui.diary.activity.DiaryCommentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 日志回复 -->
+        <activity
+            android:name=".ui.diary.activity.DiaryReplyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 日志转发 -->
+        <activity
+            android:name=".ui.diary.activity.DiaryForwardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 个人管家主页 （1.3新增） -->
+        <activity
+            android:name=".ui.usercenter.watchdog.activity.WatchdogMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_站内信 -->
+        <activity
+            android:name=".ui.usercenter.watchdog.activity.MessageChatActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_ 公告、通知、好友申请 展示的activity -->
+        <activity
+            android:name=".ui.usercenter.watchdog.activity.MessageNoticeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_主页 -->
+        <activity
+            android:name=".ui.usercenter.watchdog.activity.MyZhiMaMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_卡片夹详情 -->
+        <activity
+            android:name=".ui.usercenter.watchdog.activity.MyCouponInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_虚拟账户 -->
+        <activity
+            android:name=".ui.usercenter.watchdog.activity.VirtualInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_个人资料编辑 -->
+        <activity
+            android:name=".ui.usercenter.data.friend.activity.FriendListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_个人资料编辑 -->
+        <activity
+            android:name="com.zhima.ui.usercenter.data.profile.activity.MyProfileEditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_个人资料 -->
+        <activity
+            android:name=".ui.usercenter.data.profile.activity.MyProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 个人中心_编辑姓名 -->
+        <activity
+            android:name="com.zhima.ui.usercenter.data.profile.activity.ProfileEditNameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_编辑签名 -->
+        <activity
+            android:name="com.zhima.ui.usercenter.data.profile.activity.ProfileEditSignatureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_个人相册 -->
+        <activity
+            android:name="com.zhima.ui.usercenter.data.activity.AlbumListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_个人相册全屏预览 -->
+        <activity
+            android:name="com.zhima.ui.usercenter.data.activity.AlbumPreviewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_个人相册标题编辑 -->
+        <activity
+            android:name=".ui.usercenter.data.activity.AlbumTitleEditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_个人格子铺 -->
+        <activity
+            android:name=".ui.usercenter.data.lattice.activity.LatticeListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_格子铺编辑 -->
+        <activity
+            android:name=".ui.usercenter.data.lattice.activity.LatticeEditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_格子铺item编辑 -->
+        <activity
+            android:name=".ui.usercenter.data.lattice.activity.LatticeEditItemActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_格子预览 -->
+        <activity
+            android:name="com.zhima.ui.usercenter.data.lattice.activity.LatticeInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_通用多选listview（测试用 1.3正式开发时 删除） -->
+        <activity
+            android:name="..ui.usercenter.watchdog.MultiSelectListViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_测试用（1.3正式开发时 删除） -->
+        <activity
+            android:name=".ui.usercenter.watchdog.activity.MyTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 检索 -->
+        <activity
+            android:name=".ui.retrieval.activity.RetrievalMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 检索结果 -->
+        <activity
+            android:name=".ui.retrieval.activity.RetrievalResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 设置 -->
+        <activity
+            android:name=".ui.setting.activity.SettingMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 扫码设置 -->
+        <activity
+            android:name=".ui.setting.activity.ScanSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 绑定账号设置 -->
+        <activity
+            android:name=".ui.setting.activity.ShareConfigActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 新浪微博分享 -->
+        <activity
+            android:name="com.zhima.ui.share.sina.WeiboLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 腾讯分享设置 -->
+        <activity
+            android:name="com.zhima.ui.share.QQShareActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 人人网分享 -->
+        <activity
+            android:name="com.zhima.ui.share.RenrenLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- OAuth Version 1.0 使用 WebView 辅助授权必须 -->
+        <activity
+            android:name="com.tencent.weibo.webview.OAuthV1AuthorizeWebView"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--  -->
+        <activity
+            android:name="com.zhima.ui.share.OAuthV1AuthorizeWebView"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhima.ui.share.QQWeiboLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 关于芝麻 -->
+        <activity
+            android:name=".ui.setting.activity.AboutZhimaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".ui.setting.activity.IdeaFeedBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" >
+        </activity>
+        <!-- 纠错 -->
+        <activity
+            android:name=".ui.setting.activity.CorrectionFeedBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" >
+        </activity>
+        <!-- 帮助指南 -->
+        <activity
+            android:name=".ui.setting.activity.HelpGuideActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- 相片预览 -->
+        <activity
+            android:name=".ui.space.activity.PhotoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 通讯录 -->
+        <activity
+            android:name=".ui.contact.activity.ContactActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 单张 图片预览 -->
+        <activity
+            android:name=".ui.space.activity.PreviewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhima.ui.space.activity.ViewPluginBaseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 登陆页面 -->
+
+        <activity
+            android:name=".ui.login.activity.LoginMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 注册_用户条款 -->
+        <activity
+            android:name=".ui.login.activity.UseClauseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 注册_隐私条款 -->
+        <activity
+            android:name=".ui.login.activity.PrivacyClauseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 手机注册 -->
+        <activity
+            android:name=".ui.login.activity.PhoneRegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 手机注册_输入验证码 -->
+        <activity
+            android:name=".ui.login.activity.PhoneAuthcodeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 手机注册_密码设置 -->
+        <activity
+            android:name=".ui.login.activity.PhoneSetupActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 注册_个人资料设置 -->
+        <activity
+            android:name=".ui.login.activity.PersonalDataSetupActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 手机找回密码_输入手机号 -->
+        <activity
+            android:name=".ui.login.activity.FindPwdByPhoneActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 找回密码_输入验证码 -->
+        <activity
+            android:name=".ui.login.activity.FindPwdCodeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 找回密码_设置新密码 -->
+        <activity
+            android:name=".ui.login.activity.SetNewPwdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 第三方登陆之后绑定芝麻用户 -->
+        <activity
+            android:name=".ui.login.activity.From3BindZmActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 个人中心主页面 -->
+        <activity
+            android:name=".ui.usercenter.activity.PersonalCenterMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.usercenter.activity.PersonalDataActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心_芝麻空间绑定管理 -->
+        <activity
+            android:name="com.zhima.ui.usercenter.data.activity.ZmSpaceManagerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 看看谁来过 -->
+        <activity
+            android:name="com.zhima.ui.space.zmspace.activity.PassedRecordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 看看谁来过_访客留言列表 -->
+        <activity
+            android:name="com.zhima.ui.space.zmspace.activity.ZmSpaceVisitedCommentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 芝麻空间_广场 -->
+        <activity
+            android:name="com.zhima.ui.space.zmspace.activity.ZmSpacePlazaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 芝麻空间_誉玺简介 -->
+        <activity
+            android:name="com.zhima.ui.space.zmspace.activity.ReputationSpaceIntroActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 芝麻空间_名玺简介 -->
+        <activity
+            android:name="com.zhima.ui.space.zmspace.activity.ZmCardIntroActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 芝麻空间_喜印简介 -->
+        <activity
+            android:name="com.zhima.ui.space.zmspace.activity.CoupleIntroActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 芝麻空间——日志列表 -->
+        <activity
+            android:name="com.zhima.ui.space.zmspace.activity.ZmSpaceDiaryListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 芝麻空间——影像列表 -->
+        <activity
+            android:name="com.zhima.ui.space.zmspace.activity.ZmSpaceVedioImageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 芝麻空间——影像列表 -->
+        <activity
+            android:name="com.zhima.ui.space.zmspace.activity.ZmSpacePlaza2Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- ================ -->
+        <!-- 服务、广播 -->
+        <!-- <service -->
+        <!-- android:name=".service.ZhimaService" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:icon="@drawable/icon"/> -->
+
+
+        <!-- <receiver android:name=".service.ZhimaServiceBootReceiver" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" > -->
+        <!-- </action> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <provider
+            android:name="com.zhima.db.provider.ZhimaProvider"
+            android:authorities="com.zhima" />
+    </application>
+
+</manifest>

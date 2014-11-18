@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_left_menu"
+    android:layout_width="60dip"
+    android:layout_height="fill_parent"
+    android:background="@drawable/watchdog_left_bg"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/linear_layout_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+
+        <FrameLayout
+            android:id="@+id/item_inbox_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null" >
+
+            <RelativeLayout
+                android:id="@+id/itemlayout_inbox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/watchdog_left_select"
+                android:clickable="true"
+                android:paddingBottom="25dp"
+                android:paddingTop="25dp" >
+
+                <ImageView
+                    android:id="@+id/itemImage_inbox"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/watchdog_inbox_icon" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/itemText_inbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemImage_inbox"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="3dp"
+                    android:text="Inbox"
+                    android:textColor="#C6C6C6"
+                    android:textSize="@dimen/text_size_13" >
+                </TextView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/inbox_unread_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/message_newnotice"
+                android:gravity="center"
+                android:layout_gravity="top|right|center"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                android:text="fd"
+                android:textSize="@dimen/text_size_10" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemlayout_card"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-22dp"
+            android:background="@drawable/watchdog_left_select_2"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp" >
+
+            <ImageView
+                android:id="@+id/itemImage_card"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/watchdog_card_icon" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/itemText_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemImage_card"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="卡片夹"
+                android:textColor="#C6C6C6"
+                android:textSize="@dimen/text_size_13" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemlayout_collect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-22dp"
+            android:background="@drawable/watchdog_left_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp" >
+
+            <ImageView
+                android:id="@+id/itemImage_collect"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/watchdog_collect_icon" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/itemText_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemImage_collect"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="收藏"
+                android:textColor="#C6C6C6"
+                android:textSize="@dimen/text_size_13" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemlayout_contact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-22dp"
+            android:background="@drawable/watchdog_left_select_2"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp" >
+
+            <ImageView
+                android:id="@+id/itemImage_contact"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/watchdog_contact_icon" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/itemText_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemImage_contact"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="通讯录"
+                android:textColor="#C6C6C6"
+                android:textSize="@dimen/text_size_13" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itemlayout_scan_record"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-22dp"
+            android:background="@drawable/watchdog_left_select"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp" >
+
+            <ImageView
+                android:id="@+id/itemImage_scan_record"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/watchdog_scan_code_icon" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/itemText_scan_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemImage_scan_record"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:text="扫码记录"
+                android:textColor="#C6C6C6"
+                android:textSize="@dimen/text_size_13" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

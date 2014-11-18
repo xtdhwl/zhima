@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+    <LinearLayout
+        android:id="@+id/layout_bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/topbar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_home_scanning"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/scanning"
+            android:background="@drawable/topbar_button_bg_selecter"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white_color" />
+
+        <TextView
+            android:id="@+id/txt_home_take_photos"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="通讯录"
+            android:background="@drawable/topbar_button_bg_selecter"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white_color" />
+
+        <TextView
+            android:id="@+id/txt_home_personal_center"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我的芝麻"
+            android:background="@drawable/topbar_button_bg_selecter"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white_color" />
+
+        <TextView
+            android:id="@+id/txt_home_unknown"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="检索"
+            android:background="@drawable/topbar_button_bg_selecter"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white_color" />
+
+        <TextView
+            android:id="@+id/txt_home_keep_accounts"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置"
+            android:background="@drawable/topbar_button_bg_selecter"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</merge>

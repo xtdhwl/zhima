@@ -1,0 +1,24 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    >
+
+    <item
+        android:drawable="@drawable/main_starrysky0"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/main_starrysky1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/main_starrysky2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/main_starrysky3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/main_starrysky4"
+        android:duration="200"/>
+     <item
+        android:drawable="@drawable/main_starrysky5"
+        android:duration="200"/>
+    
+</animation-list>

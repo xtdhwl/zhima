@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/custom_dialog_bg"
+        android:orientation="vertical"
+         >
+
+        <TextView
+            android:id="@+id/txt_button_dialog_title"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="显示图片质量"
+            android:textColor="#33a3dc"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="220dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <RadioGroup 
+            android:id="@+id/rg_setting_imageOptimize_radioGroup"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@android:color/transparent"
+            android:orientation="vertical"> 
+            
+            
+        
+        <RelativeLayout 
+            android:id="@+id/layout_setting_imageOptimize_highDefinition"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_vertical"
+        	android:background="@drawable/topbar_button_bg_selecter"
+        	android:layout_gravity="center_vertical"
+            >
+            
+            <TextView 
+                android:id="@+id/txt_setting_imageOptimize_highDefinition"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="高清"
+        		android:textColor="@color/light_black"
+        		android:textSize="@dimen/text_size_18"
+        		android:padding="10dp"  
+                />
+            
+            <RadioButton 
+                android:id="@+id/rb_setting_imageOptimize_highDefinition"
+                style="@style/Custom_RadiuButton"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+                />
+            
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="220dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        
+        <RelativeLayout 
+            android:id="@+id/layout_setting_imageOptimize_common"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_vertical"
+        	android:background="@drawable/topbar_button_bg_selecter"
+        	android:layout_gravity="center_vertical"
+            >
+            
+            <TextView 
+                android:id="@+id/txt_setting_imageOptimize_common"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="普通"
+        		android:textColor="@color/light_black"
+        		android:textSize="@dimen/text_size_18"
+        		android:padding="10dp"  
+                />
+            
+            <RadioButton 
+                android:id="@+id/rb_setting_imageOptimize_common"
+                style="@style/Custom_RadiuButton"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+                />
+            
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="220dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        
+        <RelativeLayout 
+            android:id="@+id/layout_setting_imageOptimize_lowQuality"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_vertical"
+        	android:background="@drawable/topbar_button_bg_selecter"
+        	android:layout_gravity="center_vertical"
+            >
+            
+            <TextView
+                android:id="@+id/txt_setting_imageOptimize_lowQuality" 
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="低画质"
+        		android:textColor="@color/light_black"
+        		android:textSize="@dimen/text_size_18"
+        		android:padding="10dp"  
+                />
+            
+            <RadioButton 
+                android:id="@+id/rb_setting_imageOptimize_lowQuality"
+                style="@style/Custom_RadiuButton"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

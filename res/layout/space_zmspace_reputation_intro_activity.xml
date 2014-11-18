@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="250dp"
+                android:padding="10dp"
+                >
+            <ImageView
+                android:id="@+id/img_zmspace_fame_intro_logo"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/wheel_val" 
+                android:layout_centerInParent="true"
+                />
+            
+            	<ImageView 
+            	    android:id="@+id/img_zmspace_fame_intro_download"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:background="@drawable/download_bg_selecter"
+                	android:layout_toRightOf="@+id/img_zmspace_fame_intro_logo"
+                	android:layout_marginLeft="5dp"
+                	android:layout_marginBottom="5dp"
+                	android:layout_alignParentBottom="true"
+            	    />
+            	
+            </RelativeLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+                android:background="@color/light_gray2"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="公  司  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_companyName"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+                    android:text="北京知迅码"
+                    />
+                
+                </LinearLayout>
+            <!-- <RelativeLayout 
+                android:id="@+id/layout_zmspace_fame_intro_phone"
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+            	android:gravity="center_vertical"
+                >
+                
+                <TextView 
+                    android:id="@+id/txt_phone"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="手  机  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_phone"
+                    style="@style/personalCenter_textview_black_16"
+                    android:layout_toRightOf="@+id/txt_phone"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:layout_marginRight="30dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+                    android:text="15898485666"
+                    android:autoLink="phone"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user_center_contact_phone" 
+                    android:layout_alignParentRight="true"
+                    />
+                
+                </RelativeLayout>
+            <RelativeLayout 
+                android:id="@+id/layout_zmspace_fame_intro_email"
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+            	android:background="@color/light_gray2"
+            	android:gravity="center_vertical"
+                >
+                
+                <TextView 
+                    android:id="@+id/txt_phone"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="邮  箱  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_email"
+                    style="@style/personalCenter_textview_black_16"
+                    android:layout_toRightOf="@+id/txt_phone"
+            		android:layout_gravity="left"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:layout_marginRight="30dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+                    android:autoLink="email"
+                    android:text="zhixunma@zhima.net"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_intro" 
+                    android:layout_alignParentRight="true"
+                    />
+                
+                </RelativeLayout>
+            <RelativeLayout 
+                android:id="@+id/layout_zmspace_fame_intro_org"
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+            	android:gravity="center_vertical"
+                >
+                
+                <TextView 
+                    android:id="@+id/txt_phone"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="公  司  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_org"
+                    style="@style/personalCenter_textview_black_16"
+                    android:layout_toRightOf="@+id/txt_phone"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:layout_marginRight="30dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+                    android:autoLink="email"
+                    android:text="北京知迅码信息科技有限公司"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lbs_intro" 
+                    android:layout_alignParentRight="true"
+                    />
+                
+                </RelativeLayout> -->
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="联系人:"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_contactName"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="王晓晓"
+                    />
+                
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+            	android:background="@color/light_gray2"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="电  话  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_telePhone"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="010-384578943"
+                    />
+                
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="地  址  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_qq"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="11123165"
+                    />
+                
+                </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="40dp"
+            	android:gravity="center_vertical"
+            	android:orientation="horizontal"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+            	android:background="@color/light_gray2"
+                >
+                
+                <TextView 
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+                    android:text="主  页  :"
+                    />
+                <TextView 
+                    android:id="@+id/txt_zmspace_fame_intro_microblog"
+                    style="@style/personalCenter_textview_black_16"
+            		android:layout_gravity="left|center_vertical"
+            		android:textSize="@dimen/text_size_18"
+            		android:layout_marginLeft="10dp"
+            		android:singleLine="true"
+            		android:textColor="@color/dust_grey"
+            		android:autoLink="email"
+                    android:text="\@芝麻客"
+                    />
+                
+                </LinearLayout>
+
+           <View 
+               	android:layout_width="match_parent"
+            	android:layout_height="0.5dp"
+            	android:background="@color/light_gray2"
+               />
+            
+           <TextView 
+               	android:id="@+id/txt_zmspace_fame_intro_introduce"
+               	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:textSize="@dimen/text_size_18"
+            	android:padding="15dp"
+            	android:layout_marginBottom="20dp"
+            	android:gravity="left"
+            	android:textColor="@color/dust_grey"
+            	android:text="介绍：\n    哦啊死忍饥ui然后热挨饿热熔 而哦i加热爱哦惹急欧风太热i喔而容偶尔腾飞哦啊 二哦加热哦i鹅肉热"
+               />
+           
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

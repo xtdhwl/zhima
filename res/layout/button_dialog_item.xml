@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+    <LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        >
+    <TextView 
+        android:id="@+id/txt_button_dialog_item"
+        android:layout_width="fill_parent"
+    	android:layout_height="60dp"
+    	android:textSize="@dimen/text_size_20"
+    	android:gravity="center_vertical"
+    	android:textColor="@color/select_dialog_item_textColor"
+    	android:background="@drawable/select_dialog_item_bg_selecter"
+    	android:paddingLeft="20dp"
+    	android:paddingTop="10dp"
+    	android:paddingBottom="10dp"
+    	android:paddingRight="10dp"
+    	android:text="手机注册"
+        />
+
+</LinearLayout>

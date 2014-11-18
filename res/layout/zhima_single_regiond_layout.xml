@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timePicker1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:paddingTop="4dp"
+    android:layout_gravity="center_horizontal" >
+
+    <com.zhima.ui.common.view.WheelView
+        android:id="@+id/type_first"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="60dip"
+        android:layout_marginRight="60dip" />
+
+</LinearLayout>

@@ -1,0 +1,612 @@
+# view res/layout/diary_activity.xml #generated:16
+# view res/layout/setting_help_activity.xml #generated:7
+# view res/layout/user_center_lattice_pager_activity.xml #generated:16
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/map_activity.xml #generated:10
+-keep class com.mapabc.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:652
+-keep class com.tencent.weibo.webview.OAuthV1AuthorizeWebView { <init>(...); }
+
+# view AndroidManifest.xml #generated:590
+-keep class com.zhima..ui.usercenter.watchdog.MultiSelectListViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.zhima.app.ZhimaApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:875
+-keep class com.zhima.db.provider.ZhimaProvider { <init>(...); }
+
+# view res/layout/plugin_style_couples.xml #generated:3
+# view res/layout/plugin_style_idol.xml #generated:3
+# view res/layout/plugin_style_reputation.xml #generated:3
+# view res/layout/plugin_style_zmcard.xml #generated:3
+-keep class com.zhima.plugin.ViewPStyle { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.zhima.test.ProtocolTestActivity { <init>(...); }
+
+# view 1184x720/res/layout-1184x720/space_couples_activity.xml #generated:139
+# view 1184x720/res/layout-1184x720/space_couples_activity.xml #generated:187
+# view 1184x720/res/layout-1184x720/space_idol_activity.xml #generated:139
+# view 1184x720/res/layout-1184x720/space_idol_activity.xml #generated:187
+# view 1280x720/res/layout-1280x720/space_couples_activity.xml #generated:139
+# view 1280x720/res/layout-1280x720/space_couples_activity.xml #generated:187
+# view 1280x720/res/layout-1280x720/space_idol_activity.xml #generated:139
+# view 1280x720/res/layout-1280x720/space_idol_activity.xml #generated:187
+# view 1280x800/res/layout-1280x800/space_couples_activity.xml #generated:139
+# view 1280x800/res/layout-1280x800/space_couples_activity.xml #generated:187
+# view 1280x800/res/layout-1280x800/space_idol_activity.xml #generated:139
+# view 1280x800/res/layout-1280x800/space_idol_activity.xml #generated:187
+# view 320x240/res/layout-320x240/space_couples_activity.xml #generated:139
+# view 320x240/res/layout-320x240/space_couples_activity.xml #generated:187
+# view 320x240/res/layout-320x240/space_idol_activity.xml #generated:139
+# view 320x240/res/layout-320x240/space_idol_activity.xml #generated:187
+# view 480x320/res/layout-480x320/space_couples_activity.xml #generated:139
+# view 480x320/res/layout-480x320/space_couples_activity.xml #generated:187
+# view 480x320/res/layout-480x320/space_idol_activity.xml #generated:139
+# view 480x320/res/layout-480x320/space_idol_activity.xml #generated:187
+# view 800x480/res/layout-800x480/space_couples_activity.xml #generated:139
+# view 800x480/res/layout-800x480/space_couples_activity.xml #generated:187
+# view 800x480/res/layout-800x480/space_idol_activity.xml #generated:139
+# view 800x480/res/layout-800x480/space_idol_activity.xml #generated:187
+# view 854x480/res/layout-854x480/space_couples_activity.xml #generated:139
+# view 854x480/res/layout-854x480/space_couples_activity.xml #generated:187
+# view 854x480/res/layout-854x480/space_idol_activity.xml #generated:139
+# view 854x480/res/layout-854x480/space_idol_activity.xml #generated:187
+# view 960x540/res/layout-960x540/space_couples_activity.xml #generated:139
+# view 960x540/res/layout-960x540/space_couples_activity.xml #generated:187
+# view 960x540/res/layout-960x540/space_idol_activity.xml #generated:139
+# view 960x540/res/layout-960x540/space_idol_activity.xml #generated:187
+# view res/layout/space_business_activity.xml #generated:31
+# view res/layout/space_business_activity.xml #generated:39
+# view res/layout/space_business_activity.xml #generated:48
+# view res/layout/space_business_info_activity.xml #generated:51
+# view res/layout/space_couples_activity.xml #generated:139
+# view res/layout/space_couples_activity.xml #generated:187
+# view res/layout/space_elevator_first_list.xml #generated:13
+# view res/layout/space_idol_activity.xml #generated:139
+# view res/layout/space_idol_activity.xml #generated:187
+# view res/layout/space_organizaion_activity.xml #generated:158
+# view res/layout/space_vehicle_activity.xml #generated:31
+# view res/layout/space_vehicle_activity.xml #generated:39
+-keep class com.zhima.ui.common.view.CardView { <init>(...); }
+
+# view res/layout/chat_main.xml #generated:35
+# view res/layout/diary_comment_activity.xml #generated:82
+# view res/layout/diary_edit_activity.xml #generated:59
+# view res/layout/diary_reply_activity.xml #generated:82
+# view res/layout/zhima_edit_view.xml #generated:71
+-keep class com.zhima.ui.common.view.CircleFlowIndicator { <init>(...); }
+
+# view res/layout/setting_help_activity.xml #generated:12
+-keep class com.zhima.ui.common.view.CirclePageIndicator { <init>(...); }
+
+# view res/layout/myzhima_favorite_view.xml #generated:58
+# view res/layout/personal_center_data_activity.xml #generated:10
+# view res/layout/retrieval_result_activity.xml #generated:131
+# view res/layout/space_zmspace_plaza_activity.xml #generated:73
+# view res/layout/user_cardlist_view.xml #generated:14
+# view res/layout/user_center_collect_view.xml #generated:15
+# view res/layout/user_inbox_view.xml #generated:14
+# view res/layout/user_scan_code_view.xml #generated:14
+-keep class com.zhima.ui.common.view.CustomListView { <init>(...); }
+
+# view res/layout/diary_jigsaw_activity.xml #generated:14
+-keep class com.zhima.ui.common.view.JigsawView { <init>(...); }
+
+# view res/layout/space_header.xml #generated:115
+# view res/layout/space_unknown_activity.xml #generated:69
+# view res/layout/space_zmproduct_activity.xml #generated:105
+-keep class com.zhima.ui.common.view.ListCardView { <init>(...); }
+
+# view res/layout/space_album.xml #generated:10
+# view res/layout/space_couplesmedia_list.xml #generated:10
+# view res/layout/space_multimedialist_activity.xml #generated:11
+# view res/layout/space_organization_media_list.xml #generated:10
+# view res/layout/space_product_activity.xml #generated:11
+# view res/layout/space_zmspace_vedio_image_list_activity.xml #generated:15
+# view res/layout/space_zmspace_vedio_image_list_activity.xml #generated:28
+# view res/layout/space_zmspace_whois_gone_activity.xml #generated:10
+# view res/layout/user_center_my_album.xml #generated:10
+-keep class com.zhima.ui.common.view.PullToRefreshGridView { <init>(...); }
+
+# view res/layout/diary_commentlist_activity.xml #generated:10
+# view res/layout/multi_listview_activity.xml #generated:21
+# view res/layout/plugin_elevator_joke_layout.xml #generated:7
+# view res/layout/pull_to_refresh_layout.xml #generated:7
+# view res/layout/space_acqierementlist_activity.xml #generated:10
+# view res/layout/space_couplesblesslist_activity.xml #generated:26
+# view res/layout/space_couplesdiarylist_activity.xml #generated:10
+# view res/layout/space_elevator_activity.xml #generated:34
+# view res/layout/space_notice_activity.xml #generated:10
+# view res/layout/space_organization_diarylist_activity.xml #generated:10
+# view res/layout/space_organization_leavewords_list_activity.xml #generated:26
+# view res/layout/space_zmspace_plaza2_activity.xml #generated:102
+# view res/layout/space_zmspace_plaza2_activity.xml #generated:77
+# view res/layout/space_zmspace_plaza2_activity.xml #generated:89
+# view res/layout/space_zmspace_reputation_diarylist_activity.xml #generated:10
+# view res/layout/user_center_data_friendlist_activity.xml #generated:10
+# view res/layout/user_center_message_chat_activity.xml #generated:17
+# view res/layout/user_center_message_notice_activity.xml #generated:17
+# view res/layout/usercenter_mylattice_activity.xml #generated:10
+-keep class com.zhima.ui.common.view.PullToRefreshListView { <init>(...); }
+
+# view res/layout/zhima_region_three_layout.xml #generated:10
+# view res/layout/zhima_region_three_layout.xml #generated:17
+# view res/layout/zhima_region_three_layout.xml #generated:24
+-keep class com.zhima.ui.common.view.ShortWheelView { <init>(...); }
+
+# view res/layout/user_center_watchdog_sliding_activity.xml #generated:9
+-keep class com.zhima.ui.common.view.SlidingMenuView { <init>(...); }
+
+# view res/layout/diary_album_activity.xml #generated:28
+-keep class com.zhima.ui.common.view.SpaceGallery { <init>(...); }
+
+# view res/layout/plugin_business_product.xml #generated:31
+# view res/layout/plugin_business_promotion.xml #generated:31
+# view res/layout/plugin_card_space_header.xml #generated:14
+# view res/layout/plugin_couples_multimedia.xml #generated:52
+# view res/layout/plugin_idol_multimedia.xml #generated:52
+# view res/layout/plugin_idol_recommended.xml #generated:37
+# view res/layout/plugin_space_header.xml #generated:9
+# view res/layout/space_organizaion_activity.xml #generated:214
+-keep class com.zhima.ui.common.view.SpaceViewPager { <init>(...); }
+
+# view res/layout/plugin_couples_acqierement.xml #generated:55
+-keep class com.zhima.ui.common.view.ThreeList { <init>(...); }
+
+# view res/layout/myzhima_main_activity.xml #generated:30
+-keep class com.zhima.ui.common.view.TitleFlowIndicator { <init>(...); }
+
+# view res/layout/chat_main.xml #generated:29
+# view res/layout/diary_comment_activity.xml #generated:76
+# view res/layout/diary_edit_activity.xml #generated:55
+# view res/layout/diary_reply_activity.xml #generated:76
+# view res/layout/myzhima_main_activity.xml #generated:80
+# view res/layout/space_product_info_activity.xml #generated:11
+# view res/layout/space_promotion_info_activity.xml #generated:16
+# view res/layout/zhima_edit_view.xml #generated:65
+-keep class com.zhima.ui.common.view.ViewFlow { <init>(...); }
+
+# view res/layout/diary_info_activity.xml #generated:10
+-keep class com.zhima.ui.common.view.WebViewPager { <init>(...); }
+
+# view res/layout/zhima_datepicker_layout.xml #generated:10
+# view res/layout/zhima_datepicker_layout.xml #generated:17
+# view res/layout/zhima_datepicker_layout.xml #generated:24
+# view res/layout/zhima_single_regiond_layout.xml #generated:9
+# view res/layout/zhima_typepicker_layout.xml #generated:10
+# view res/layout/zhima_typepicker_layout.xml #generated:20
+-keep class com.zhima.ui.common.view.WheelView { <init>(...); }
+
+# view 1184x720/res/layout-1184x720/space_couples_activity.xml #generated:32
+# view 1184x720/res/layout-1184x720/space_idol_activity.xml #generated:32
+# view 1280x720/res/layout-1280x720/space_couples_activity.xml #generated:32
+# view 1280x720/res/layout-1280x720/space_idol_activity.xml #generated:32
+# view 1280x800/res/layout-1280x800/space_couples_activity.xml #generated:32
+# view 1280x800/res/layout-1280x800/space_idol_activity.xml #generated:32
+# view 320x240/res/layout-320x240/space_couples_activity.xml #generated:32
+# view 320x240/res/layout-320x240/space_idol_activity.xml #generated:32
+# view 480x320/res/layout-480x320/space_couples_activity.xml #generated:32
+# view 480x320/res/layout-480x320/space_idol_activity.xml #generated:32
+# view 800x480/res/layout-800x480/space_couples_activity.xml #generated:32
+# view 800x480/res/layout-800x480/space_idol_activity.xml #generated:32
+# view 854x480/res/layout-854x480/space_couples_activity.xml #generated:32
+# view 854x480/res/layout-854x480/space_idol_activity.xml #generated:32
+# view 960x540/res/layout-960x540/space_couples_activity.xml #generated:32
+# view 960x540/res/layout-960x540/space_idol_activity.xml #generated:32
+# view res/layout/space_couples_activity.xml #generated:32
+# view res/layout/space_idol_activity.xml #generated:32
+# view res/layout/space_organizaion_activity.xml #generated:32
+# view res/layout/space_photo_activity.xml #generated:9
+-keep class com.zhima.ui.common.view.ZMGallery { <init>(...); }
+
+# view res/layout/user_center_message_chat_activity.xml #generated:37
+-keep class com.zhima.ui.common.view.ZhimaEditView { <init>(...); }
+
+# view res/layout/plugin_topbar.xml #generated:7
+# view res/layout/topbar.xml #generated:11
+-keep class com.zhima.ui.common.view.ZhimaTopbar { <init>(...); }
+
+# view res/layout/user_center_contact_view.xml #generated:39
+-keep class com.zhima.ui.common.view.charindex.CharSideBar { <init>(...); }
+
+# view AndroidManifest.xml #generated:701
+-keep class com.zhima.ui.contact.activity.ContactActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:462
+-keep class com.zhima.ui.diary.activity.DiaryCommentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:450
+-keep class com.zhima.ui.diary.activity.DiaryCommentListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:438
+-keep class com.zhima.ui.diary.activity.DiaryEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:474
+-keep class com.zhima.ui.diary.activity.DiaryForwardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:456
+-keep class com.zhima.ui.diary.activity.DiaryInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:468
+-keep class com.zhima.ui.diary.activity.DiaryReplyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:444
+-keep class com.zhima.ui.diary.activity.DiaryShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:326
+-keep class com.zhima.ui.diary.activity.JigsawActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:433
+-keep class com.zhima.ui.diary.activity.LocalAlbumActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:762
+-keep class com.zhima.ui.login.activity.FindPwdByPhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:768
+-keep class com.zhima.ui.login.activity.FindPwdCodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:780
+-keep class com.zhima.ui.login.activity.From3BindZmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:720
+-keep class com.zhima.ui.login.activity.LoginMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:756
+-keep class com.zhima.ui.login.activity.PersonalDataSetupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:744
+-keep class com.zhima.ui.login.activity.PhoneAuthcodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:738
+-keep class com.zhima.ui.login.activity.PhoneRegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:750
+-keep class com.zhima.ui.login.activity.PhoneSetupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:732
+-keep class com.zhima.ui.login.activity.PrivacyClauseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:774
+-keep class com.zhima.ui.login.activity.SetNewPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:726
+-keep class com.zhima.ui.login.activity.UseClauseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.zhima.ui.main.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.zhima.ui.main.activity.initActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:380
+-keep class com.zhima.ui.map.activity.GeoMapLocation { <init>(...); }
+
+# view AndroidManifest.xml #generated:386
+-keep class com.zhima.ui.map.activity.NavigationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:602
+-keep class com.zhima.ui.retrieval.activity.RetrievalMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:609
+-keep class com.zhima.ui.retrieval.activity.RetrievalResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:403
+-keep class com.zhima.ui.scancode.activity.DecodeImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:409
+-keep class com.zhima.ui.scancode.activity.GetQRCodeInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:397
+-keep class com.zhima.ui.scancode.activity.QREncodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:392
+-keep class com.zhima.ui.scancode.activity.ScanningActivity { <init>(...); }
+
+# view res/layout/scanning_activity.xml #generated:18
+-keep class com.zhima.ui.scancode.view.ViewfinderView { <init>(...); }
+
+# view AndroidManifest.xml #generated:669
+-keep class com.zhima.ui.setting.activity.AboutZhimaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:681
+-keep class com.zhima.ui.setting.activity.CorrectionFeedBackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:687
+-keep class com.zhima.ui.setting.activity.HelpGuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:675
+-keep class com.zhima.ui.setting.activity.IdeaFeedBackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:622
+-keep class com.zhima.ui.setting.activity.ScanSettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:616
+-keep class com.zhima.ui.setting.activity.SettingMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:628
+-keep class com.zhima.ui.setting.activity.ShareConfigActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:658
+-keep class com.zhima.ui.share.OAuthV1AuthorizeWebView { <init>(...); }
+
+# view AndroidManifest.xml #generated:640
+-keep class com.zhima.ui.share.QQShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:663
+-keep class com.zhima.ui.share.QQWeiboLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:646
+-keep class com.zhima.ui.share.RenrenLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:634
+-keep class com.zhima.ui.share.sina.WeiboLoginActivity { <init>(...); }
+
+# view res/layout/sidebar_menulist.xml #generated:20
+-keep class com.zhima.ui.sidebar.MenuHorizontalScrollView { <init>(...); }
+
+# view AndroidManifest.xml #generated:218
+-keep class com.zhima.ui.space.activity.AcqierementActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:212
+-keep class com.zhima.ui.space.activity.AcqierementListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:248
+-keep class com.zhima.ui.space.activity.AlbumActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:242
+-keep class com.zhima.ui.space.activity.BusinessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:254
+-keep class com.zhima.ui.space.activity.BusinessInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:302
+-keep class com.zhima.ui.space.activity.CouponInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:296
+-keep class com.zhima.ui.space.activity.CouponListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:362
+-keep class com.zhima.ui.space.activity.ElevatorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:230
+-keep class com.zhima.ui.space.activity.IdoPhotoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:199
+-keep class com.zhima.ui.space.activity.IdolActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:206
+-keep class com.zhima.ui.space.activity.IdolInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:368
+-keep class com.zhima.ui.space.activity.JokeInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:224
+-keep class com.zhima.ui.space.activity.MultimediaListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.zhima.ui.space.activity.NoNetWorkActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:260
+-keep class com.zhima.ui.space.activity.NoticeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:290
+-keep class com.zhima.ui.space.activity.NoticeInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:695
+-keep class com.zhima.ui.space.activity.PhotoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:707
+-keep class com.zhima.ui.space.activity.PreviewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:266
+-keep class com.zhima.ui.space.activity.ProductInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:272
+-keep class com.zhima.ui.space.activity.ProductListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:278
+-keep class com.zhima.ui.space.activity.PromotionInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:284
+-keep class com.zhima.ui.space.activity.PromotionListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:314
+-keep class com.zhima.ui.space.activity.PublicActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:356
+-keep class com.zhima.ui.space.activity.PublicSpaceInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:308
+-keep class com.zhima.ui.space.activity.RetriConponInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:350
+-keep class com.zhima.ui.space.activity.SpaceImageShowInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:344
+-keep class com.zhima.ui.space.activity.SpaceImageShowListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:320
+-keep class com.zhima.ui.space.activity.UnknownActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:332
+-keep class com.zhima.ui.space.activity.VcardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:338
+-keep class com.zhima.ui.space.activity.VehicleActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:712
+-keep class com.zhima.ui.space.activity.ViewPluginBaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:236
+-keep class com.zhima.ui.space.activity.ZMProductActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:374
+-keep class com.zhima.ui.space.activity.ZhimaMapLocation { <init>(...); }
+
+# view res/layout/space_header.xml #generated:105
+# view res/layout/space_header.xml #generated:95
+# view res/layout/space_organizaion_activity.xml #generated:140
+# view res/layout/space_organizaion_activity.xml #generated:150
+-keep class com.zhima.ui.space.controller.NormalCardView { <init>(...); }
+
+# view res/layout/space_header.xml #generated:60
+-keep class com.zhima.ui.space.controller.PraiseView { <init>(...); }
+
+# view 1184x720/res/layout-1184x720/space_couples_activity.xml #generated:16
+# view 1184x720/res/layout-1184x720/space_idol_activity.xml #generated:16
+# view 1280x720/res/layout-1280x720/space_couples_activity.xml #generated:16
+# view 1280x720/res/layout-1280x720/space_idol_activity.xml #generated:16
+# view 1280x800/res/layout-1280x800/space_couples_activity.xml #generated:16
+# view 1280x800/res/layout-1280x800/space_idol_activity.xml #generated:16
+# view 320x240/res/layout-320x240/space_couples_activity.xml #generated:16
+# view 320x240/res/layout-320x240/space_idol_activity.xml #generated:16
+# view 480x320/res/layout-480x320/space_couples_activity.xml #generated:16
+# view 480x320/res/layout-480x320/space_idol_activity.xml #generated:16
+# view 800x480/res/layout-800x480/space_couples_activity.xml #generated:16
+# view 800x480/res/layout-800x480/space_idol_activity.xml #generated:16
+# view 854x480/res/layout-854x480/space_couples_activity.xml #generated:16
+# view 854x480/res/layout-854x480/space_idol_activity.xml #generated:16
+# view 960x540/res/layout-960x540/space_couples_activity.xml #generated:16
+# view 960x540/res/layout-960x540/space_idol_activity.xml #generated:16
+# view res/layout/plugin_default_layout.xml #generated:2
+# view res/layout/space_business_activity.xml #generated:16
+# view res/layout/space_couples_activity.xml #generated:16
+# view res/layout/space_idol_activity.xml #generated:16
+# view res/layout/space_organizaion_activity.xml #generated:16
+# view res/layout/space_vehicle_activity.xml #generated:16
+# view res/layout/test_organizition_view.xml #generated:7
+-keep class com.zhima.ui.space.controller.SpaceScrollView { <init>(...); }
+
+# view AndroidManifest.xml #generated:192
+-keep class com.zhima.ui.space.couples.activity.BlessEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:150
+-keep class com.zhima.ui.space.couples.activity.CouplesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.zhima.ui.space.couples.activity.CouplesBlessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:164
+-keep class com.zhima.ui.space.couples.activity.CouplesDiaryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:157
+-keep class com.zhima.ui.space.couples.activity.CouplesDiaryListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:178
+-keep class com.zhima.ui.space.couples.activity.CouplesMediaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:171
+-keep class com.zhima.ui.space.couples.activity.CouplesMediaListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.zhima.ui.space.organization.activity.LeaveWordsEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:136
+-keep class com.zhima.ui.space.organization.activity.LeaveWordsListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.zhima.ui.space.organization.activity.OrganizationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.zhima.ui.space.organization.activity.OrganizationDiaryListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.zhima.ui.space.organization.activity.OrganizationMediaListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:836
+-keep class com.zhima.ui.space.zmspace.activity.CoupleIntroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:806
+-keep class com.zhima.ui.space.zmspace.activity.PassedRecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:824
+-keep class com.zhima.ui.space.zmspace.activity.ReputationSpaceIntroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:830
+-keep class com.zhima.ui.space.zmspace.activity.ZmCardIntroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:842
+-keep class com.zhima.ui.space.zmspace.activity.ZmSpaceDiaryListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:854
+-keep class com.zhima.ui.space.zmspace.activity.ZmSpacePlaza2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:818
+-keep class com.zhima.ui.space.zmspace.activity.ZmSpacePlazaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:848
+-keep class com.zhima.ui.space.zmspace.activity.ZmSpaceVedioImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:812
+-keep class com.zhima.ui.space.zmspace.activity.ZmSpaceVisitedCommentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:787
+-keep class com.zhima.ui.usercenter.activity.PersonalCenterMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:794
+-keep class com.zhima.ui.usercenter.activity.PersonalDataActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:548
+-keep class com.zhima.ui.usercenter.data.activity.AlbumListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:554
+-keep class com.zhima.ui.usercenter.data.activity.AlbumPreviewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:560
+-keep class com.zhima.ui.usercenter.data.activity.AlbumTitleEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:800
+-keep class com.zhima.ui.usercenter.data.activity.ZmSpaceManagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:517
+-keep class com.zhima.ui.usercenter.data.friend.activity.FriendListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:572
+-keep class com.zhima.ui.usercenter.data.lattice.activity.LatticeEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:578
+-keep class com.zhima.ui.usercenter.data.lattice.activity.LatticeEditItemActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:584
+-keep class com.zhima.ui.usercenter.data.lattice.activity.LatticeInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:566
+-keep class com.zhima.ui.usercenter.data.lattice.activity.LatticeListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:529
+-keep class com.zhima.ui.usercenter.data.profile.activity.MyProfileActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:523
+-keep class com.zhima.ui.usercenter.data.profile.activity.MyProfileEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:536
+-keep class com.zhima.ui.usercenter.data.profile.activity.ProfileEditNameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:542
+-keep class com.zhima.ui.usercenter.data.profile.activity.ProfileEditSignatureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:487
+-keep class com.zhima.ui.usercenter.watchdog.activity.MessageChatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:493
+-keep class com.zhima.ui.usercenter.watchdog.activity.MessageNoticeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:505
+-keep class com.zhima.ui.usercenter.watchdog.activity.MyCouponInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:596
+-keep class com.zhima.ui.usercenter.watchdog.activity.MyTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:499
+-keep class com.zhima.ui.usercenter.watchdog.activity.MyZhiMaMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:511
+-keep class com.zhima.ui.usercenter.watchdog.activity.VirtualInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:481
+-keep class com.zhima.ui.usercenter.watchdog.activity.WatchdogMainActivity { <init>(...); }
+

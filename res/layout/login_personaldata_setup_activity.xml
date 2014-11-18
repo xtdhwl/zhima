@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人资料设置 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <TextView 
+            style="@style/personalCenter_textview_black_16"
+            android:id="@+id/txt_login_data_setUp_uid"
+        	android:layout_gravity="left"
+        	android:textColor="@color/blue_deep"
+        	android:layout_marginBottom="20dp"
+        	android:textSize="@dimen/text_size_17"
+        	android:text="您的UID为11010,用于登陆时使用."
+            />
+        
+        <!-- 头像 -->
+
+        <RelativeLayout
+            android:id="@+id/layout_photo"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/list_item_bg_selecter" >
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/default_image" />
+
+            <TextView
+                style="@style/user_center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_photo"
+                android:text="上传头像" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/img_more" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#66ffffff" />
+        <!-- 信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <!-- 用户名 -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white_color" />
+
+            <RelativeLayout
+                style="@style/user_center_button"
+                android:layout_gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/txt_name_tag"
+                    style="@style/user_center_text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="用户名" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    style="@style/user_center_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="20dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black_color" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/img_more" />
+            </RelativeLayout>
+            <!-- 性别 -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white_color" />
+
+            <LinearLayout
+                style="@style/user_center_button"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        style="@style/user_center_text_title"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="性别" />
+
+                    <RadioGroup
+                        android:id="@+id/rdogp_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="90dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/user_center_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="男"
+                            android:textColor="@color/black_color" />
+
+                        <RadioButton
+                            android:id="@+id/rb_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_checkbox_selecter"
+                            android:textSize="@dimen/text_size_17" />
+
+                        <TextView
+                            style="@style/user_center_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:text="女"
+                            android:textColor="@color/black_color" />
+
+                        <RadioButton
+                            android:id="@+id/rb_female"
+                            style="@style/user_center_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_checkbox_selecter"
+                            android:text="" />
+                    </RadioGroup>
+
+                    <ImageView
+                        android:id="@+id/img_name_move"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="7dp"
+                        android:src="@drawable/img_more" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 城市 -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white_color" />
+
+            <LinearLayout
+                style="@style/user_center_button"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/user_center_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="城市" />
+
+                    <TextView
+                        android:id="@+id/txt_address"
+                        style="@style/user_center_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:text=""
+                        android:textColor="@color/black_color" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="7dp"
+                        android:src="@drawable/img_more" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

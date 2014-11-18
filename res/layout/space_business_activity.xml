@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 拍码:商业空间activity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.zhima.ui.space.controller.SpaceScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <include layout="@layout/space_header" />
+
+                <!-- CardView -->
+
+                <com.zhima.ui.common.view.CardView
+                    android:id="@+id/productCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zhima:itemCount="3"
+                    zhima:title="商品列表" >
+                </com.zhima.ui.common.view.CardView>
+
+                <com.zhima.ui.common.view.CardView
+                    android:id="@+id/promotionCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    zhima:card_horizontalSpacing="7dp"
+                    zhima:itemCount="2"
+                    zhima:title="商户活动" >
+                </com.zhima.ui.common.view.CardView>
+
+                <com.zhima.ui.common.view.CardView
+                    android:id="@+id/recommendedCard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="35dp"
+                    zhima:itemCount="3"
+                    zhima:title="周边推荐" >
+                </com.zhima.ui.common.view.CardView>
+            </LinearLayout>
+        </com.zhima.ui.space.controller.SpaceScrollView>
+
+        <View
+            android:id="@+id/view_transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/tran_view_color"
+            android:clickable="false"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 看看谁来过,留言列表 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="240dp"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/space_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="查看留言"
+        android:textColor="@color/white_color" />
+
+    <View
+        style="@style/line"
+        android:background="@color/white_color" />
+
+    <ListView
+        android:id="@+id/lstv_message"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:footerDividersEnabled="true"
+		android:headerDividersEnabled="true"
+         >
+    </ListView>
+
+</LinearLayout>

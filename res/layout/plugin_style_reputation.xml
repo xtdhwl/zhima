@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 商业空间样式配置文件 -->
+<view xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+    class="com.zhima.plugin.ViewPStyle"
+    zhima:viewPluginLayoutBackground="@color/main_bg"
+    zhima:viewPluginListSelector="@drawable/list_item_bg"
+    zhima:viewPluginMoreBackground="@drawable/reputation_more"
+    zhima:viewPluginPopupMenuBackground="@drawable/popup_menu_reputation"
+    zhima:viewPluginPopupMenuSelector="@drawable/plugin_reputation_popup_menu_selecter"
+    zhima:viewPluginPopupMenuDivider="@drawable/plugin_reputation_popup_menu_divider"
+    zhima:viewPluginSelector="@drawable/list_item_bg_selecter"
+    zhima:viewPluginTitleBackground="@drawable/space_line_reputationtitle"
+    zhima:viewPluginTitleColor="@color/dust_grey"
+    zhima:viewPluginTopbarBackground="@color/reputation_c" >
+
+</view>

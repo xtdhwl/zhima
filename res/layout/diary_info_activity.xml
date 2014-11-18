@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <com.zhima.ui.common.view.WebViewPager
+        android:id="@+id/webvpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.zhima.ui.common.view.WebViewPager>
+
+</LinearLayout>

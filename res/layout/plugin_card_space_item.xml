@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    
+    <View 
+        android:id="@+id/first_dotted_line"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left"
+        android:visibility="invisible"
+        android:background="@drawable/dotted_line_vetical_card"/>
+
+    <TextView
+        android:id="@+id/text_space_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/light_gray"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="喜印空间" />
+
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:background="@drawable/dotted_line_vetical_card"/>
+</LinearLayout>

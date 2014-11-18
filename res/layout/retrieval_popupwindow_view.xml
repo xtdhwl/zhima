@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/topbar"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:id="@+id/layout_retrieval_key"
+        android:layout_width="fill_parent"
+    	android:layout_height="50dp"
+    	android:orientation="horizontal"
+        android:background="@drawable/topbar_button_bg_selecter"
+        >
+    	<ImageView 
+        	android:layout_width="25dp"
+    		android:layout_height="25dp"
+    		android:layout_gravity="center_vertical"
+    		android:src="@drawable/search_icon_h"
+    		android:paddingLeft="5dp"
+        	/>
+
+    	<TextView 
+        	android:id="@+id/txt_retrieval_key"
+        	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center_vertical"
+    		android:layout_marginLeft="5dp"
+    		android:textSize="@dimen/text_size_16"
+    		android:text="开始搜索   ..."
+        	/>
+    </LinearLayout>
+    
+</LinearLayout>

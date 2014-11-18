@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/white_color"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <TextView
+        android:id="@+id/contactitem_catalog"
+        style="@style/MMListCatalog"
+        android:layout_height="wrap_content"
+        android:background="@color/login_bg"
+        android:paddingRight="4.0dip" />
+
+    <LinearLayout
+        android:id="@+id/contactitem_layout"
+        style="@style/MMListItem"
+        android:background="@drawable/list_item_bg_white_gray_selet"
+        android:clickable="true" 
+ 		android:focusable="false" 
+        android:layout_height="80dp"
+        android:paddingLeft="8.0dip" 
+        >
+
+        <ImageView
+            android:id="@+id/contactitem_avatar_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/contactitem_nick"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="asrtgr" />
+            
+            <TextView
+                android:id="@+id/contactitem_phone"
+                style="@style/MMFontTitleInList"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/light_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:singleLine="true" 
+                android:text="010-86868686"
+                />
+        </LinearLayout>
+
+        <ImageView 
+            android:id="@+id/contactitem_select_cb"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dip"
+            android:src="@drawable/user_center_contact_phone"
+            android:visibility="visible" 
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/region_three_picker"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:paddingTop="4dp"
+	android:layout_marginTop="8dp"
+    android:layout_gravity="center_horizontal" >
+
+    <com.zhima.ui.common.view.ShortWheelView
+        android:id="@+id/province"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="4dp" />
+
+    <com.zhima.ui.common.view.ShortWheelView
+        android:id="@+id/city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="4dip" />
+
+    <com.zhima.ui.common.view.ShortWheelView
+        android:id="@+id/region"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="4dp"/>
+
+</LinearLayout>

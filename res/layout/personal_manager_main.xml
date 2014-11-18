@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <include layout="@layout/watchdog_left_menu_layout"/>
+
+        <View style="@style/test_watchdog_line_vertical" />
+
+        <LinearLayout
+            android:id="@+id/layout_right_right"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/test_watchdog_search_bg" >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/edit_search"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:background="@drawable/watchdog_search_edit_bg"
+                    android:drawableLeft="@drawable/watchdog_search_icon"
+                    android:drawablePadding="8dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/watchdog_count_bg" >
+
+                <ImageView
+                    android:id="@+id/change_mode_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="7dp"
+                    android:src="@drawable/watchdog_triangle"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/text_result_count"
+                        android:layout_marginBottom="3dp"
+                        android:background="@color/test_menu_blue"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="4dp"
+                        android:text="共0条结果"
+                        android:textColor="@color/watchdog_text_count" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/user_inbox_view" />
+
+            <include layout="@layout/user_scan_code_view" />
+
+            <!-- 收藏 -->
+
+            <include layout="@layout/user_center_collect_view" />
+            <!-- 通讯录 -->
+
+            <include layout="@layout/user_center_contact_view" />
+
+            <include layout="@layout/user_cardlist_view" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

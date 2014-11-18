@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/main_bg"
+    >
+    
+	<include layout="@layout/topbar"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView 
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+            >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+    
+            <ImageView 
+                android:layout_width="fill_parent"
+            	android:layout_height="150dp"
+            	android:background="@drawable/scaning_contact_head_bg"
+                />
+            
+            <!-- 姓名 -->
+            <TextView 
+                style="@style/Business_Card_title"
+                android:layout_marginTop="20dp"
+                android:text="@string/name"
+                />
+            <View style="@style/line"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darkcyan"
+                />
+            <TextView 
+                style="@style/Business_Card_content"
+                android:id="@+id/space_vcard_name"
+                android:text="空"
+                />
+            
+            <!-- 联系方式 -->
+            
+            <TextView 
+                style="@style/Business_Card_title"
+                android:text="@string/phone"
+                />
+            <View style="@style/line"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darkcyan"
+                />
+            <TextView 
+                style="@style/Business_Card_content"
+                android:id="@+id/space_vcard_phone"
+                android:autoLink="phone"
+                android:text="空"
+                />
+            
+            <!-- 公司名称 -->
+            
+            <TextView 
+                style="@style/Business_Card_title"
+                android:text="@string/company"
+                />
+            <View style="@style/line"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darkcyan"
+                />
+            <TextView 
+                style="@style/Business_Card_content"
+                android:id="@+id/space_vcard_company"
+                android:text="空"
+                />
+            
+            <!-- 职位 -->
+            
+            <TextView 
+                style="@style/Business_Card_title"
+                android:text="@string/profession_position"
+                />
+            <View style="@style/line"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darkcyan"
+                />
+            <TextView 
+                style="@style/Business_Card_content"
+                android:id="@+id/space_vcard_position"
+                android:text="空"
+                />
+            
+            <!-- 邮箱 -->
+            
+            <TextView 
+                style="@style/Business_Card_title"
+                android:text="@string/email"
+                />
+            <View style="@style/line"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darkcyan"
+                />
+            <TextView 
+                style="@style/Business_Card_content"
+                android:id="@+id/space_vcard_email"
+                android:autoLink="email"
+                android:text="空"
+                />
+            
+            <!-- 地址 -->
+            
+            <TextView 
+                style="@style/Business_Card_title"
+                android:text="@string/address"
+                />
+            <View style="@style/line"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darkcyan"
+                />
+            <TextView 
+                style="@style/Business_Card_content"
+                android:id="@+id/space_vcard_address"
+                android:text="空"
+                />
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="vertical"
+    			android:visibility="gone"
+                >
+            <!-- .. -->
+            
+            <TextView 
+                style="@style/Business_Card_title"
+                android:text="元素1"
+                />
+            <View style="@style/line"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darkcyan"
+                />
+            <TextView 
+                style="@style/Business_Card_content"
+                android:id="@+id/space_vcard_element1"
+                android:text="空"
+                />
+            
+            <!--  -->
+            
+            <TextView 
+                style="@style/Business_Card_title"
+                android:text="元素2"
+                />
+            <View style="@style/line"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darkcyan"
+                />
+            <TextView 
+                style="@style/Business_Card_content"
+                android:id="@+id/space_vcard_element2"
+                android:layout_marginBottom="40dp"
+                android:text="空"
+                />
+            </LinearLayout>
+            
+    </LinearLayout>
+    
+    </ScrollView>
+
+        <View
+            android:id="@+id/view_transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/tran_view_color"
+            android:clickable="false"
+            android:visibility="gone" />
+    </FrameLayout>
+	
+    
+	
+</LinearLayout>

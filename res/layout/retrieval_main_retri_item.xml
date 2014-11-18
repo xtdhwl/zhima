@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/list_item_bg_white_gray_selet"
+        >
+
+        <ImageView
+            android:id="@+id/img_retrievalMain_retriItem_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/retrieval_main_ido" />
+
+        <TextView
+            android:id="@+id/txt_retrievalMain_retriItem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_centerVertical="true"
+            android:text="知天使"
+            android:textColor="@color/blue_deep"
+            android:textSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img_more" 
+            />
+        
+        
+    </RelativeLayout>
+
+        <View 
+            android:id="@+id/below_view"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            />
+</LinearLayout>

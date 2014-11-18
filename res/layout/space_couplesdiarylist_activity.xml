@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_couples_activity"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <com.zhima.ui.common.view.PullToRefreshListView
+        xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+        android:id="@+id/refresh_lstv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/couples_list_divider"
+        android:listSelector="@drawable/list_selector_background"
+        zhima:ptrMode="both" >
+    </com.zhima.ui.common.view.PullToRefreshListView>
+
+</LinearLayout>

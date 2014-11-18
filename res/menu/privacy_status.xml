@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/public_state"
+        android:icon="@drawable/select_mark"
+        android:title="@string/public_state"/>
+    <item
+        android:id="@+id/privacy_state"
+        android:icon="@drawable/select_mark"
+        android:title="@string/privacy_state"/>
+
+</menu>

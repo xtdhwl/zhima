@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="topbar">#212121</color>
+    <color name="bottombar">#33a3dc</color>
+    <color name="mask">#cc000000</color>
+    <color name="toast_bg">#272a2f</color>
+    <color name="main_bg_silver">#c0c0c0</color>
+    <color name="main_bg">#e9ebf1</color>
+    <color name="main_bg_color">#f7f7f7</color>
+    <color name="common_black_color">#000000</color>
+    <color name="black_color">#ff000000</color>
+    <color name="white_color">#ffffff</color>
+    <color name="white_color_light">#22ffffff</color>
+    <color name="red_color">#ff0000</color>
+    <color name="green_color">#008000</color>
+    <color name="dust_grey">#ff7f8084</color>
+    <color name="darkred">#8b0000</color>
+    <color name="dimgrey_color">#696969</color>
+    <color name="topbar_title">#aa111111</color>
+    <color name="light20_Black">#22130c0e</color>
+
+    <!-- common editor -->
+    <color name="bottom_line_editor_text_color">#6b6b6a</color>
+    <color name="bottom_line_editor_hint_color">#b9b9b8</color>
+    <color name="editor_text_color">#778899</color>
+    <color name="editor_hint_color">#778899</color>
+    <!-- qr code -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <!-- 浅灰色 -->
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="diary_top">#3e3e3e</color>
+    <color name="unknown_ranking_heavyBlack">#99130c0e</color>
+    <color name="unknown_reply_gray">#77787b</color>
+    <color name="unknown_lightGray">#5577787b</color>
+    <color name="personal_center_popmenu_text">#ffffffff</color>
+    <color name="personal_center__modify_photo_text">#ffffffff</color>
+    <color name="personal_manager_date_bg">#333333</color>
+    <color name="personal_manager_group_bg">#D7D7D7</color>
+    <color name="personal_manager_child_bg">#E6E6E6</color>
+    <color name="modify_info_cut_line">#000000</color>
+    <!-- 页面中的内容中模块标题栏背景颜色 -->
+    <color name="content_info_title_bg">#BCBCBC</color>
+    <color name="content_info_bg">#E6E6E6</color>
+    <color name="gray">#666666</color>
+    <color name="light_gray">#66666666</color>
+    <color name="trueman_bg">#e6e6e6</color>
+    <color name="trueman_area_bg">#d7d7d7</color>
+
+    <!-- 自定义对话框的背景颜色 -->
+    <color name="custom_dialog_bg">#fffffb</color>
+    <color name="custom_dialog_text_black">#454545</color>
+
+    <!-- 登陆页面 -->
+    <color name="login_button_bg">#009ad6</color>
+    <!-- 暗青色 -->
+    <color name="darkcyan">#33B5E5</color>
+    <!-- 暗灰色 -->
+    <color name="darkgray">#DDDDDD</color>
+    <!-- 蓝色 -->
+    <color name="blue">#0000ff</color>
+
+    <!-- 顶部栏 button 按下时的背景颜色 -->
+    <color name="topbar_button_select_bg">#8833a3dc</color>
+
+    <!-- 空间里面标题栏的顶端的线的颜色 -->
+    <color name="card_top_line">#C6C6C6</color>
+
+    <!-- ___________________新定义颜色________________________ -->
+
+
+    <!-- 测试颜色 正式开发删除 -->
+    <color name="test_menu_blue">#00376A</color>
+    <color name="test_watchdog_search_bg">#EAEBF0</color>
+    <color name="test_watchdog_line">#7F7F81</color>
+    <color name="test_watchdog_line_vertical">#A4A4A5</color>
+
+    <!-- 蓝色 -->
+    <color name="zhima_color_blue">#228fbd</color>
+    <!-- 空间view分割线的颜色 -->
+    <color name="line_grey">#D8D8D8</color>
+    <color name="black">#130c0e</color>
+    <color name="light_black_tran">#33130c0e</color>
+    <color name="light_black_heavy">#99130c0e</color>
+    <!-- 普通字体的灰色 -->
+    <color name="common_grey_color">#999999</color>
+    <!-- 接近黑色的灰色 -->
+    <color name="light_black">#454545</color>
+    <color name="light_gray2">#3377787b</color>
+
+    <!-- 收藏夹标题的灰色 -->
+    <color name="black_grey">#626262</color>
+    <!-- 商家公告选项卡的蓝色背景 -->
+    <color name="dark_blue">#227EAF</color>
+    <!-- 商家优惠活动和卡片夹  gridview的背景色 -->
+    <color name="card_grid">#d2d0d0</color>
+    <color name="transparent">#00000000</color>
+    <color name="grayish">#f1f1f1</color>
+    <!-- 侧边栏展开的时候 右边view的半透覆盖色 -->
+    <color name="tran_view_color">#50000000</color>
+    <!-- 个人管家的一些测试颜色 设计出来后删除或者修改 -->
+    <color name="pm_son_top_edit_bg_color">#D7D7D7</color>
+    <color name="pm_son_main_bg_color">#D0D6DC</color>
+    <color name="message_activity_bg">#EAEBF0</color>
+    <color name="watchdog_text_count">#4EBCED</color>
+    <color name="watchdog_left_item_text">#C6C6C6</color>
+    <!-- 情侣知天使topbar -->
+    <color name="red_couples_topbar">#ff0042</color>
+    <!-- 情侣知天使 cardview的顶层线的深粉红色 -->
+    <color name="couples_card_top_line">#DD89A5</color>
+    <!-- 情侣知天使cardview字体颜色 -->
+    <color name="couples_cardview_text_color">#E2195D</color>
+    <!-- 情侣知天使cardview背景颜色 -->
+    <color name="couples_cardview_bg_color">#F698B8</color>
+    <!-- 机构空间topbar -->
+    <color name="orange_organization_topbar">#937635</color>
+    <!-- 机构空间分隔层标题的背景色 -->
+    <color name="organization_son_title_bg">#DEDDDB</color>
+    <!-- 机构空间分隔层顶层线的颜色 -->
+    <color name="orange_son_top_line">#CAC3BD</color>
+    <!-- 机构空间赞的次数字体颜色 -->
+    <color name="organization_praise_count">#FDDB7A</color>
+
+    <!-- 颜色 -->
+    <color name="card_text_gallery">#53A960</color>
+
+    <!-- 深蓝色 -->
+    <color name="blue_link">#004E88</color>
+    <color name="blue_deep">#1b315e</color>
+    <color name="select_dialog_item_textColor">#073B65</color>
+    <color name="select_dialog_titleColor">#33B7E5</color>
+    <color name="select_dialog_item_bg_s">#81D0EA</color>
+    <!-- 登陆注册页面整体背景色 -->
+    <color name="login_bg">#e9ebf1</color>
+    <color name="user_center_forword_diary_bg">#edeef3</color>
+    <color name="user_center_mainTab_button_bg">#d1d1d1</color>
+    <color name="user_center_space_data_bg">#7f8083</color>
+    <color name="user_center_data_count_bg">#e6e8ed</color>
+
+    <!-- 检索1.3 -->
+    <color name="retrieval_type_bg">#6e6e6e</color>
+    <color name="retrieval_type_bg_h">#373737</color>
+    <color name="retrieval_type_textColor">#004B87</color>
+
+    <!-- 插件 -->
+    <!-- topbar -->
+    <color name="couples_topbar_bg">#800601</color>
+    <color name="reputation_c">#383838</color>
+    <color name="zmcard_c">#7FAB9E</color>
+    <color name="zmcard_topbar_bg">#A7D2C1</color>
+    <!-- select -->
+    <color name="couples_c">#660500</color>
+    <color name="photo_top">#88888888</color>
+    <color name="plugin_couples_menu_divider">#881814</color>
+    <color name="plugin_zmcard_menu_divider">#AEDACF</color>
+    <color name="plugin_reputation_menu_divider">#68686A</color>
+    <color name="reputation_sele">#383838</color>
+    <color name="zmcard_sele">#A7D2C1</color>
+
+</resources>

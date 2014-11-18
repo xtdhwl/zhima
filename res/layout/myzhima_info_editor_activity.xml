@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 个人资料修改 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical" >
+
+                <!-- 头像 -->
+
+                <RelativeLayout
+                    android:id="@+id/layout_photo"
+                    style="@style/user_center_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp" >
+
+                    <ImageView
+                        android:id="@+id/img_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/default_image" />
+
+                    <TextView
+                        style="@style/user_center_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_photo"
+                        android:text="上传头像" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="7dp"
+                        android:src="@drawable/img_more" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#66ffffff" />
+                <!-- 信息 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <!-- 用户名 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/white_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_name"
+                        style="@style/user_center_button"
+                        android:layout_gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/txt_name_tag"
+                            style="@style/user_center_text_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="用户名" />
+
+                        <TextView
+                            android:id="@+id/txt_name"
+                            style="@style/user_center_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="90dp"
+                            android:layout_marginRight="20dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black_color" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="7dp"
+                            android:src="@drawable/img_more" />
+                    </RelativeLayout>
+                    <!-- 性别 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/white_color" />
+
+                    <LinearLayout
+                        style="@style/user_center_button"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent" >
+
+                            <TextView
+                                style="@style/user_center_text_title"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="性别" />
+
+                            <RadioGroup
+                                android:id="@+id/rdogp_gender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="90dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="男"
+                                    android:textColor="@color/black_color" />
+
+                                <RadioButton
+                                    android:id="@+id/rdo_male"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/radio_checkbox_selecter"
+                                    android:text=""
+                                    android:textSize="@dimen/text_size_17" />
+
+                                <TextView
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-10dp"
+                                    android:text="女"
+                                    android:textColor="@color/black_color" />
+
+                                <RadioButton
+                                    android:id="@+id/rdo_female"
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/radio_checkbox_selecter"
+                                    android:text="" />
+                            </RadioGroup>
+
+                            <ImageView
+                                android:id="@+id/img_name_move"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dp"
+                                android:src="@drawable/img_more" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!-- 城市 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/white_color" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_address"
+                        style="@style/user_center_button"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                style="@style/user_center_text_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="城市" />
+
+                            <TextView
+                                android:id="@+id/txt_address"
+                                style="@style/user_center_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="90dp"
+                                android:layout_marginRight="20dp"
+                                android:textColor="@color/black_color" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dp"
+                                android:src="@drawable/img_more" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <!-- 生日 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/white_color" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_birthday"
+                        style="@style/user_center_button"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                style="@style/user_center_text_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="生日" />
+
+                            <TextView
+                                android:id="@+id/txt_birthday"
+                                style="@style/user_center_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="90dp"
+                                android:textColor="@color/black_color" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dp"
+                                android:src="@drawable/img_more" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <!-- 星座 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/white_color" />
+
+                    <LinearLayout
+                        style="@style/user_center_button"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                style="@style/user_center_text_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="星座" />
+
+                            <TextView
+                                android:id="@+id/txt_astro"
+                                style="@style/user_center_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="90dp"
+                                android:textColor="@color/black_color" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!-- 血型 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/white_color" />
+
+                    <LinearLayout
+                        style="@style/user_center_button"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                style="@style/user_center_text_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="血型" />
+
+                            <RadioGroup
+                                android:id="@+id/rdogp_blood"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="90dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="A"
+                                    android:textColor="@color/black_color" />
+
+                                <RadioButton
+                                    android:id="@+id/rdo_blood_a"
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/radio_checkbox_selecter"
+                                    android:text="" />
+
+                                <TextView
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-10dp"
+                                    android:text="B"
+                                    android:textColor="@color/black_color" />
+
+                                <RadioButton
+                                    android:id="@+id/rdo_blood_b"
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/radio_checkbox_selecter"
+                                    android:text="" />
+
+                                <TextView
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-10dp"
+                                    android:text="O"
+                                    android:textColor="@color/black_color" />
+
+                                <RadioButton
+                                    android:id="@+id/rdo_blood_o"
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/radio_checkbox_selecter"
+                                    android:text="" />
+
+                                <TextView
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-10dp"
+                                    android:text="AB"
+                                    android:textColor="@color/black_color" />
+
+                                <RadioButton
+                                    android:id="@+id/rdo_blood_ab"
+                                    style="@style/user_center_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/radio_checkbox_selecter"
+                                    android:text="" />
+                            </RadioGroup>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dp"
+                                android:src="@drawable/img_more" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 签名 -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/white_color" />
+
+                <LinearLayout
+                    android:id="@+id/layout_signature"
+                    style="@style/user_center_button"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:minHeight="45dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            style="@style/user_center_text_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="签名"
+                            android:textSize="@dimen/text_size_17" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true" >
+
+                            <TextView
+                                android:id="@+id/txt_signature"
+                                style="@style/user_center_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="90dp"
+                                android:layout_marginRight="20dp"
+                                android:gravity="top"
+                                android:textColor="@color/black_color" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="7dp"
+                            android:src="@drawable/img_more" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#66ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

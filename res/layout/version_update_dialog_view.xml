@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/white_color"
+    >
+    
+    <TextView 
+        android:id="@+id/txt_version_update_currentVersion"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="@dimen/text_size_18"
+    	android:textColor="@color/black"
+    	android:text="当前版本：1.0"
+        />
+    <TextView 
+        android:id="@+id/txt_version_update_newVersion"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="@dimen/text_size_18"
+    	android:textColor="@color/black"
+    	android:layout_marginTop="5dp"
+    	android:text="最新版本：2.0"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="@dimen/text_size_18"
+    	android:textColor="@color/black"
+    	android:layout_marginTop="5dp"
+    	android:text="更新内容 "
+        />
+    
+    <LinearLayout
+        android:id="@+id/layout_version_update_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:scrollbars="none"
+            >
+
+            <TextView
+                android:id="@+id/txt_version_update_updateContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1.修复bug问题\n2.界面的体验优化"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18" />
+        </ScrollView>
+        
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        >
+        <!-- 是否提示更新 -->
+        <CheckBox 
+            android:id="@+id/cb_isPrompt_update"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            style="@style/Custom_checkBox"
+            />
+        
+        <TextView 
+        	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textSize="@dimen/text_size_18"
+    		android:layout_toRightOf="@+id/cb_isPrompt_update"
+    		android:layout_marginTop="10dp"
+    		android:textColor="@color/black"
+    		android:layout_centerVertical="true"
+    		android:text="不再自动提示更新"
+        	/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>

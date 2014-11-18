@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    
+    <FrameLayout 
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        >
+    <com.zhima.ui.common.view.PullToRefreshGridView
+        xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+        android:id="@+id/refresh_image_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:listSelector="@drawable/list_selector_background"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        zhima:ptrMode="both" />
+    
+    <com.zhima.ui.common.view.PullToRefreshGridView
+        xmlns:zhima="http://schemas.android.com/apk/res/com.zhima"
+        android:id="@+id/refresh_vedio_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:listSelector="@drawable/list_selector_background"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        zhima:ptrMode="both" />
+    
+</FrameLayout>
+</LinearLayout>

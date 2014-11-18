@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- plugin整体view布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <!-- viewPlugin topbar布局 -->
+
+    <LinearLayout
+        android:id="@+id/layout_topbar_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- <include layout="@layout/topbar" /> -->
+    </LinearLayout>
+
+    <!-- viewPlugin body布局 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/layout_body_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_transparent_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/tran_view_color"
+            android:clickable="false"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

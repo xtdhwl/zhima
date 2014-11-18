@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 活动详情 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.zhima.ui.common.view.ViewFlow
+            android:id="@+id/flow_promotion"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.zhima.ui.common.view.ViewFlow>
+    </LinearLayout>
+
+</LinearLayout>

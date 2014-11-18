@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp" >
+
+        <EditText
+            android:id="@+id/edt_content"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/login_edit_bg1"
+            android:gravity="top"
+            android:hint="请输入交易方式"
+            android:paddingBottom="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/txt_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="还可以输入140个字"
+            android:textColor="#033B69" />
+    </RelativeLayout>
+
+</LinearLayout>

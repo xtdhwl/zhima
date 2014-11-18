@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/personalCenter_textview_black_16"
+    android:background="@drawable/user_center_maintab_button_bg_selector"
+    android:text="个人空间"
+    android:textSize="@dimen/text_size_18" />

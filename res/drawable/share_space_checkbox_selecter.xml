@@ -1,0 +1,13 @@
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <!-- 分享checkbox -->
+    <item Android:drawable="@drawable/share_space_checkbox_h" Android:state_checked="true" Android:state_enabled="true" Android:state_window_focused="false"/>
+    <item Android:drawable="@drawable/share_space_checkbox" Android:state_checked="false" Android:state_enabled="true" Android:state_window_focused="false"/>
+    <item Android:drawable="@drawable/share_space_checkbox_h" Android:state_checked="true" Android:state_enabled="true" Android:state_pressed="true"/>
+    <item Android:drawable="@drawable/share_space_checkbox" Android:state_checked="false" Android:state_enabled="true" Android:state_pressed="true"/>
+    <item Android:drawable="@drawable/share_space_checkbox_h" Android:state_checked="true" Android:state_enabled="true" Android:state_focused="true"/>
+    <item Android:drawable="@drawable/share_space_checkbox" Android:state_checked="false" Android:state_enabled="true" Android:state_focused="true"/>
+    <item Android:drawable="@drawable/share_space_checkbox" Android:state_checked="false" Android:state_enabled="true"/>
+    <item Android:drawable="@drawable/share_space_checkbox_h" Android:state_checked="true" Android:state_enabled="true"/>
+
+</selector>

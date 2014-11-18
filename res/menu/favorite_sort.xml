@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/sort_ido"
+        android:icon="@drawable/select_mark"
+        android:title="@string/idol"/>
+    <item
+        android:id="@+id/sort_couples"
+        android:icon="@drawable/select_mark"
+        android:title="@string/space_couples_title_short"/>
+    <item
+        android:id="@+id/sort_other"
+        android:icon="@drawable/select_mark"
+        android:title="@string/watchdog_other_favorite"/>
+
+</menu>

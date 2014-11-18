@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 3000种商品 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="9dp" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_photo"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/image_select_bg"
+                            android:padding="3dp"
+                            android:src="@drawable/default_image"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignBottom="@id/img_photo"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignTop="@id/img_photo"
+                            android:layout_toLeftOf="@id/img_photo"
+                            android:orientation="vertical"
+                            android:weightSum="4" >
+
+                            <TextView
+                                android:id="@+id/txt_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:singleLine="true"
+                                android:text="--"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/text_size_20" />
+
+                            <TextView
+                                android:id="@+id/txt_code"
+                                style="@style/space_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:singleLine="true"
+                                android:text="--" />
+
+                            <TextView
+                                android:id="@+id/txt_price"
+                                style="@style/space_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:singleLine="true"
+                                android:text="--" />
+
+                            <TextView
+                                android:id="@+id/txt_type"
+                                style="@style/space_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:singleLine="true"
+                                android:text="--" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_content"
+                        style="@style/space_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <!-- 公告 -->
+
+                <com.zhima.ui.common.view.ListCardView
+                    android:id="@+id/card_notice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </com.zhima.ui.common.view.ListCardView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        style="@style/list_line"
+                        android:text="@string/idol" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="35dp" >
+
+                        <include layout="@layout/space_idol" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/view_transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/tran_view_color"
+            android:clickable="false"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

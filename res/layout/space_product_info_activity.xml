@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 商家详情 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <com.zhima.ui.common.view.ViewFlow
+        android:id="@+id/flow_production"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.zhima.ui.common.view.ViewFlow>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    >
+    
+    <include layout="@layout/topbar"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:layout_marginTop="20dp"
+    	android:layout_marginLeft="20dp"
+        >
+        
+        <ImageView 
+            android:id="@+id/img_zmspace_visited_headImage"
+            android:layout_width="70dp"
+    		android:layout_height="70dp"
+            android:src="@drawable/default_image"
+            />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginLeft="10dp"
+    		android:layout_gravity="center_vertical"
+    		android:orientation="vertical"
+            >
+            
+            <TextView 
+                android:id="@+id/txt_zmspace_visited_name"
+                style="@style/personalCenter_textview_black_16"
+                android:layout_gravity="left"
+                android:textSize="@dimen/text_size_18"
+    			android:text=""
+                />
+            
+            <TextView 
+                android:id="@+id/txt_zmspace_visited_address"
+                style="@style/personalCenter_textview_black_16"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+    			android:text=""
+                />
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ListView 
+        android:id="@+id/lstv_zmspace_visited_commentList"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:listSelector="@android:color/transparent"
+    	android:cacheColorHint="#00000000"
+		android:layout_margin="20dp"
+		android:divider="@android:color/transparent"
+		android:dividerHeight="10dp"
+        >
+    </ListView>
+    
+</LinearLayout>

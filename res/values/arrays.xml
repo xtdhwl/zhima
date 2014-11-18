@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 婚姻状况 -->
+    <string-array name="marriage_options">
+        <item>单身</item>
+        <item>恋爱</item>
+        <item>已婚</item>
+        <item>保密</item>
+    </string-array>
+    <!-- 性别 -->
+    <string-array name="gender_options">
+        <item>男</item>
+        <item>女</item>
+        <item>保密</item>
+    </string-array>
+    <!-- 错误代码 -->
+    <integer-array name="error_codes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </integer-array>
+    <!-- 错误描述 -->
+    <string-array name="error_messages">
+        <item>成功</item>
+        <item>没有连接网络</item>
+        <item>网络连接超时</item>
+        <item>协议错误</item>
+        <item>数据格式错误</item>
+        <item>网络操作失败</item>
+        <item>IO错误</item>
+        <item>Json解析错误！</item>
+        <item>写入文件失败！</item>
+    </string-array>
+    <!-- 表情图片转义字符 -->
+    <string-array name="face_symbol">
+        <item>呵呵</item>
+        <item>嘻嘻</item>
+        <item>调皮</item>
+        <item>哈哈</item>
+        <item>可爱</item>
+        <item>可怜</item>
+        <item>挖鼻屎</item>
+        <item>吃惊</item>
+        <item>害羞</item>
+        <item>闭嘴</item>
+        <item>鄙视</item>
+        <item>爱你</item>
+        <item>泪</item>
+        <item>偷笑</item>
+        <item>亲亲</item>
+        <item>委屈</item>
+        <item>泪</item>
+        <item>偷笑</item>
+        <item>亲亲</item>
+        <item>委屈</item>
+    </string-array>
+    <!-- 表情图片资源id -->
+    <array name="face_drawables">
+        <item>@drawable/face_0</item>
+        <item>@drawable/face_1</item>
+        <item>@drawable/face_2</item>
+        <item>@drawable/face_3</item>
+        <item>@drawable/face_4</item>
+        <item>@drawable/face_5</item>
+        <item>@drawable/face_6</item>
+        <item>@drawable/face_7</item>
+        <item>@drawable/face_8</item>
+        <item>@drawable/face_9</item>
+        <item>@drawable/face_10</item>
+        <item>@drawable/face_11</item>
+        <item>@drawable/face_12</item>
+        <item>@drawable/face_13</item>
+        <item>@drawable/face_14</item>
+        <item>@drawable/face_15</item>
+        <item>@drawable/face_12</item>
+        <item>@drawable/face_13</item>
+        <item>@drawable/face_14</item>
+        <item>@drawable/face_15</item>
+    </array>
+    <!-- 分享 -->
+    <array name="share">
+        <item>新浪微博</item>
+        <item>腾讯微博</item>
+        <item>人人网</item>
+        <item>短信</item>
+        <item>推荐给知天使</item>
+    </array>
+    <!-- menu -->
+    <array name="notice_transpond">
+        <item>转发</item>
+        <item>更多内容</item>
+    </array>
+    <array name="select_photos">
+        <item>拍照</item>
+        <item>查看相册</item>
+    </array>
+    <!-- 星座 -->
+    <array name="astros">
+        <item>魔羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+        <item>牡羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+    </array>
+
+</resources>

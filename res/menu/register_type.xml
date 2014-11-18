@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/no_registed_user"
+        android:icon="@drawable/select_mark"
+        android:title="@string/no_registed_user"/>
+	<item
+        android:id="@+id/registed_user"
+        android:icon="@drawable/select_mark"
+        android:title="@string/registed_user"/>
+    
+</menu>

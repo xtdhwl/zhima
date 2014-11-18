@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/user_center_diaryitem_bg_selecter"
+    >
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_personalData_diaryItem_title"
+            style="@style/personalCenter_textview_black_16"
+            android:textSize="@dimen/text_size_18"
+            android:text="有一个二货"
+            android:textStyle="bold" 
+            />
+
+        <!-- <TextView
+            android:id="@+id/txt_personalData_diaryItem_date"
+            style="@style/personalCenter_textview_black_16"
+            android:layout_alignParentRight="true"
+            android:text="2013-01-01 01:01" />  -->
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:id="@+id/layout_personalData_diaryItem_forwardContent"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+    	android:layout_marginTop="5dp"
+    	android:background="@color/light_gray2"
+    	android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt_personalData_diaryItem_content"
+            style="@style/personalCenter_textview_black_16"
+            android:layout_gravity="left"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="从前有一个二货，被另一个二货盯上了。另一个二货非要加二货为好友，二货偏不同意另一个二货要加二货为好友的请求，另一个二货非常轴"
+            android:textColor="@color/gray" />
+        
+            <!-- android:maxWidth="150dp"
+            android:maxHeight="150dp"
+            android:minWidth="80dp"
+            android:minHeight="80dp" -->
+        <ImageView 
+            android:id="@+id/img_personalData_diaryItem_image"
+            android:layout_width="150dp"
+    		android:layout_height="150dp"
+    		android:layout_margin="10dp"
+            android:src="@drawable/default_image"
+            />
+        
+    <LinearLayout 
+        android:id="@+id/layout_personalData_diaryItem_fromAndDate"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        >
+    <TextView
+        style="@style/personalCenter_textview_black_16"
+        android:text="来自" 
+        android:textColor="@color/gray"
+        android:layout_gravity="left"
+        />
+    <TextView
+        android:id="@+id/txt_personalData_diaryItem_from"
+        style="@style/personalCenter_textview_black_16"
+        android:textColor="@color/blue_deep"
+        android:layout_gravity="left"
+        />
+    <TextView
+        android:id="@+id/txt_personalData_diaryItem_publishedDate"
+        style="@style/personalCenter_textview_black_16"
+        android:text="  2012年12月10日 20:32 " 
+        android:textColor="@color/gray"
+        android:layout_gravity="left"
+        />
+<!--         android:visibility="gone" -->
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/txt_personalData_diaryItem_toSpace"
+        style="@style/personalCenter_textview_black_16"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+    	android:paddingTop="5dp"
+    	android:paddingBottom="5dp"
+    	android:textColor="@color/blue_deep"
+        android:text="\@宠物空间,@宠物空间"
+        />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_vertical"
+        >
+
+        <!-- <TextView
+            android:id="@+id/txt_personalData_diaryItem_title"
+            style="@style/personalCenter_textview_black_16"
+            android:text="有一个二货"
+            android:textStyle="bold" /> -->
+
+        <TextView
+            android:id="@+id/txt_personalData_diaryItem_date"
+            style="@style/personalCenter_textview_black_16"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:text="2013-01-01 01:01" 
+            />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+            android:orientation="horizontal"
+        	android:layout_alignParentRight="true"
+        	android:gravity="center_vertical"
+            >
+    <ImageView 
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:background="@drawable/user_center_forword"
+        />
+        <TextView
+        android:id="@+id/txt_personalData_diaryItem_forwordCount"
+        style="@style/personalCenter_textview_black_16"
+        android:textColor="@color/blue_deep"
+        android:padding="5dp"
+        android:text="10"
+        />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray" />
+    <ImageView 
+        android:layout_width="18dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/user_center_comment"
+        />
+        <TextView
+        android:id="@+id/txt_personalData_diaryItem_commentCount"
+        style="@style/personalCenter_textview_black_16"
+        android:textColor="@color/blue_deep"
+        android:padding="5dp"
+        android:text="10"
+        />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    
+   <!--  <TextView
+        android:id="@+id/txt_personalData_diaryItem_commentCount"
+        style="@style/personalCenter_textview_black_16"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+        android:text="转发:10  评论:10"
+        /> -->
+    
+</LinearLayout>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/sort_contact_space"
+        android:icon="@drawable/select_mark"
+        android:title="@string/watchdog_contacts_space"/>
+    <item
+        android:id="@+id/sort_contact_personal"
+        android:icon="@drawable/select_mark"
+        android:title="@string/watchdog_contacts_personal"/>
+
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_silver"
+    android:orientation="vertical" >
+    
+    <include
+        layout="@layout/topbar"
+        />
+    
+	<EditText 
+	    android:id="@+id/edt_findPwd_setPwd"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/please_input_newPwd"
+	    />
+    <EditText 
+	    android:id="@+id/edt_findPwd_setPwd_again"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/please_input_again"
+	    />
+    
+    <Button 
+        android:id="@+id/btn_findPwd_setPwd_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_20"
+        android:text="@string/finish"
+        />
+    
+</LinearLayout>

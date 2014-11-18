@@ -1,0 +1,12 @@
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+	<!-- 分享checkbox -->
+    <item Android:drawable="@drawable/radio_select" Android:state_checked="true" Android:state_enabled="true" Android:state_window_focused="false"/>
+    <item Android:drawable="@drawable/radio_select_h" Android:state_checked="false" Android:state_enabled="true" Android:state_window_focused="false"/>
+    <item Android:drawable="@drawable/radio_select" Android:state_checked="true" Android:state_enabled="true" Android:state_pressed="true"/>
+    <item Android:drawable="@drawable/radio_select_h" Android:state_checked="false" Android:state_enabled="true" Android:state_pressed="true"/>
+    <item Android:drawable="@drawable/radio_select" Android:state_checked="true" Android:state_enabled="true" Android:state_focused="true"/>
+    <item Android:drawable="@drawable/radio_select_h" Android:state_checked="false" Android:state_enabled="true" Android:state_focused="true"/>
+    <item Android:drawable="@drawable/radio_select_h" Android:state_checked="false" Android:state_enabled="true"/>
+    <item Android:drawable="@drawable/radio_select" Android:state_checked="true" Android:state_enabled="true"/>
+
+</selector>

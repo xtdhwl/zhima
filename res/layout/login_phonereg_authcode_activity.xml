@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/topbar" />
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edt_phoneResgiter_authcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:layout_marginTop="3dp"
+            android:hint="@string/authCode"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:singleLine="true" 
+            android:background="@drawable/login_left_edit_bg1"
+            />
+
+        <Button
+            android:id="@+id/login_phoneReg_authcode_sendAgain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:text="发送"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15" 
+            android:background="@drawable/login_rightbt_bg_selecter"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_phoneResgiter_authcode_nextStep"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button_bg_selecter"
+        android:text="@string/login_next_step"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_20" />
+
+</LinearLayout>
